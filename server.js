@@ -4,6 +4,9 @@ const app = express();
 const loading_router = require("./routes/load_workout_route")
 app.use(loading_router);
 
+const homeRouter = require("./routes/homeRouter");
+app.use(homeRouter);
+
 //for static method
 const static_files_router = express.static('static')
 app.use( static_files_router )
@@ -15,11 +18,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 // Set the view engine to EJS
 app.set('view engine', 'ejs');
-
-// Home route
-app.get('/', (req, res) => {
-  res.render('index');
-});
 
 // Start the server
 const PORT = process.env.PORT || 3000;
