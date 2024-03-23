@@ -1,6 +1,6 @@
 # HooBuff 
 
-Welcome to the Workout Selector website! This repository contains the code for a web application designed to help users create personalized workout routines based on their preferences.
+Welcome to the HooBuff website! This repository contains the code for a web application designed to help users create personalized workout routines based on their preferences.
 
 ## ℹ️ About
 
