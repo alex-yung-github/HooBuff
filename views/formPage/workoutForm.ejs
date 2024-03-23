@@ -83,7 +83,7 @@
         <h1 id="instruction"></h1>
 
         <form action="/loading" method="POST">
-          <label for="category" class="form-label mb-1 label-text"
+          <label for="btnradio" class="form-label mb-1 label-text"
             ><p>Workout Category</p>
           </label>
           <div class="button-group" role="group">
@@ -106,27 +106,6 @@
               ><%= workoutCategory[1].name %></label
             >
           </div>
-          <!--div class="button-group">
-            <button
-              class="btn btn-light btn-primary button mb-5"
-              type="submit"
-              name="category"
-              id="<1%= workoutCategory[0].value %>"
-              value="<1%= workoutCategory[0].value %>"
-            >
-              <1%= workoutCategory[0].name %>
-            </button>
-
-            <button
-              class="btn btn-light btn-primary button mb-5"
-              type="submit"
-              name="category"
-              id="<1%= workoutCategory[1].value %>"
-              value="<1%= workoutCategory[1].value %>"
-            >
-              <1%= workoutCategory[1].name %>
-            </button>
-          </div-->
 
           <div class="question">
             <label for="muscle" class="form-label mb-1"
@@ -142,6 +121,7 @@
                   class="form-check-input"
                   value="<%= muscle.value %>"
                   id="<%= muscle.value %>"
+                  name="muscleGroup[]"
                 />
                 <label for="<%= muscle.value %>" class="form-check-label"
                   ><%= muscle.name %></label
@@ -186,10 +166,9 @@
                 <option disabled selected class="default-category" value="">
                   --Total Workout Time--
                 </option>
-                <% for (let i = 1; i <= 6; i++) { %>
+                <% for (let i = 1; i <= 8; i++) { %>
                 <option value="<%= i * 30 %>"><%= i * 30 %> minutes</option>
                 <% }; %>
-                <option value="300+">More than 180 minutes</option>
               </select>
             </div>
           </div>
@@ -203,17 +182,16 @@
     <script src="js/homeForm/formPage.js"></script>
     <script>
       // Pre-Filling Clothing Category Based on Answer to Previous Form
-      document.querySelectorAll(".button").forEach((button) => {
-        button.classList.remove("btn-primary");
+      document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+        radio.checked = false;
       });
 
-      document
-        .getElementById(<%= category %>.value)
-        .classList.add("btn-primary");
+      console.log(<%= category %>.name);
+      console.log(<%= category %>.value);
 
       document
         .getElementById(<%= category %>.value)
-        .classList.remove("btn-light");
+        .checked = true;
     </script>
   </body>
 </html>
