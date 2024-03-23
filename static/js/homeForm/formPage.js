@@ -18,3 +18,33 @@ let typeText = new TypeIt("#instruction", {
     speed: 45
 })
 .go();
+
+// Form Validation
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (e) => {
+  let numChecked = $("input:checkbox:checked").length; // Number of checkboxes that are checked
+  if (numChecked == 0) {
+    e.preventDefault();
+    alert("Make sure at least one muscle group is selected");
+  }
+
+  if (!form.checkValidity()) {
+    // Prevent form from submitting
+    e.preventDefault();
+  }
+});
+
+// Switch which button is pressed
+document.querySelectorAll(".button").forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelectorAll(".button").forEach((buttons) => {
+            buttons.classList.remove("btn-primary");
+            buttons.classList.add("btn-light")
+        });
+
+        button.classList.add("btn-primary");
+
+        button.classList.remove("btn-light");
+    });
+});

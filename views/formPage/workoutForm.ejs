@@ -83,47 +83,56 @@
         <h1 id="instruction"></h1>
 
         <form action="/loading" method="POST">
-          <label for="category" class="form-label mb-1"
-            ><p style="font-size: 1.7rem; font-weight: 500">Workout Category</p>
+          <label for="category" class="form-label mb-1 label-text"
+            ><p>Workout Category</p>
           </label>
-          <select
-            name="category"
-            id="category"
-            class="form-select mb-5"
-            required
-          >
-            <% workoutCategory.forEach((category) => { %>
-            <option value="<%= category.value %>" id="<%= category.value %>">
-              <%= category.name %>
-            </option>
-            <% }); %>
-          </select>
+          <div class="button-group">
+            <button
+              class="btn btn-light btn-primary button mb-5"
+              type="submit"
+              name="category"
+              id="<%= workoutCategory[0].value %>"
+              value="<%= workoutCategory[0].value %>"
+            >
+              <%= workoutCategory[0].name %>
+            </button>
+
+            <button
+              class="btn btn-light btn-primary button mb-5"
+              type="submit"
+              name="category"
+              id="<%= workoutCategory[1].value %>"
+              value="<%= workoutCategory[1].value %>"
+            >
+              <%= workoutCategory[1].name %>
+            </button>
+          </div>
+
+          <div class="question">
+            <label for="muscle" class="form-label mb-1"
+              ><p style="font-size: 1.7rem; font-weight: 500">
+                Select Target Muscle Group(s)
+              </p>
+            </label>
+            <div class="checkbox-container" id="muscle">
+              <% muscleGroup.forEach((muscle) => { %>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  value="<%= muscle.value %>"
+                  id="<%= muscle.value %>"
+                />
+                <label for="<%= muscle.value %>" class="form-check-label"
+                  ><%= muscle.name %></label
+                >
+              </div>
+              <% }); %>
+            </div>
+          </div>
 
           <div class="form-questions">
-            <div>
-              <label for="muscle" class="form-label mb-1"
-                ><p style="font-size: 1.7rem; font-weight: 500">
-                  Select Target Muscle Group(s)
-                </p>
-              </label>
-              <div class="checkbox-container" id="muscle">
-                <% muscleGroup.forEach((muscle) => { %>
-                <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    value="<%= muscle.value %>"
-                    id="<%= muscle.value %>"
-                  />
-                  <label for="<%= muscle.value %>" class="form-check-label"
-                    ><%= muscle.name %></label
-                  >
-                </div>
-                <% }); %>
-              </div>
-            </div>
-
-            <div>
+            <div class="question">
               <label for="experience" class="form-label mb-1"
                 ><p style="font-size: 1.7rem; font-weight: 500">
                   Gym Experience
@@ -141,7 +150,7 @@
               />
             </div>
 
-            <div>
+            <div class="question">
               <label for="time" class="form-label mb-1"
                 ><p style="font-size: 1.7rem; font-weight: 500">
                   Select Total Workout Time
@@ -174,24 +183,17 @@
     <script src="js/homeForm/formPage.js"></script>
     <script>
       // Pre-Filling Clothing Category Based on Answer to Previous Form
-      document.querySelectorAll('option').selected = false;
-      document.getElementById(<%= category %>.value).selected = true;
-
-      // Form Validation
-      const form = document.querySelector("form");
-
-      form.addEventListener("submit", (e) => {
-          let numChecked = $('input:checkbox:checked').length;    // Number of checkboxes that are checked
-          if (numChecked == 0) {
-              e.preventDefault();
-              alert("Make sure at least one muscle group is selected");
-          }
-
-          if (!form.checkValidity()) {
-              // Prevent form from submitting
-              e.preventDefault();
-          }
+      document.querySelectorAll(".button").forEach((button) => {
+        button.classList.remove("btn-primary");
       });
+
+      document
+        .getElementById(<%= category %>.value)
+        .classList.add("btn-primary");
+
+      document
+        .getElementById(<%= category %>.value)
+        .classList.remove("btn-light");
     </script>
   </body>
 </html>

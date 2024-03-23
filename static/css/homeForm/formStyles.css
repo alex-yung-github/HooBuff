@@ -1,12 +1,17 @@
 body {
-    background-color: white;
+    background-color: black;
     height: 100%;
 }
 
 h1 {
     font-size: 3.5rem;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 1em;
+    color: white;
+}
+
+p {
+    color: white;
 }
 
 /* Nav Bar */
@@ -45,7 +50,7 @@ section.hero img {
         transform: translateY(-10px);
     }
     to {
-        opacity: 0.4;
+        opacity: 0.6;
         transform: translateY(0);
     }
 }
@@ -62,6 +67,11 @@ section.hero img {
     display: flex;
     flex-wrap: wrap;
     gap: 6em;
+    justify-content: center;
+}
+
+.question {
+    width: 33%;
 }
 
 .default-category {
@@ -79,4 +89,33 @@ section.hero img {
     display: block; 
     width: 8em; 
     margin: auto;
+}
+
+.label-text {
+    display: block;
+    text-align: center;
+}
+
+label p {
+    font-size: 3rem; 
+    font-weight: 500;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.button {
+    display: block; 
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px gray;
 }
