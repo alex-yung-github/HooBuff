@@ -186,12 +186,7 @@
         radio.checked = false;
       });
 
-      console.log(<%= category %>.name);
-      console.log(<%= category %>.value);
-
-      document
-        .getElementById(<%= category %>.value)
-        .checked = true;
+      document.getElementById("<%= category %>").checked = true;
     </script>
   </body>
 </html>
