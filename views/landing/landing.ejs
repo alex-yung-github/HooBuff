@@ -93,8 +93,13 @@
                         <div class="card-body">
                             <h3 class="text-success">Workout Description</h3>
                             <p><%= workoutPlan[i].description %></p>
-                            <h3 class="text-info">Difficulty</h3>
+                            <h3 class="text-success">Difficulty</h3>
                             <p>Difficulty: <%= workoutPlan[i].difficulty %></p>
+                            <h3 class="text-success"> Muscles Targeted</h3>
+                            <%= for(let k = 0; k < workoutPlan[i].muscles_targeted.length; k++) { %>
+                            <li> <%= workoutPlan[i].muscles_targeted[k] %><li>
+                                <% } %>
+
                         </div>
                     </div>
                 </div>
@@ -116,7 +121,12 @@
                             <p><%= workoutPlan[i+1].description %></p>
                             <h3 class="text-info">Difficulty</h3>
                             <p>Difficulty: <%= workoutPlan[i+1].difficulty %></p>
-                        </div>
+                            <h3 class="text-success"> Muscles Targeted</h3>
+                            <%= for(let k = 0; k < workoutPlan[i+1].muscles_targeted.length; k++) { %>
+                                <li> <%= workoutPlan[i+1].muscles_targeted[k] %><li>
+                                    <% } %>
+    
+                        </div>  
                     </div>
                 </div>
             </div>
