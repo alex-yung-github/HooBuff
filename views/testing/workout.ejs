@@ -10,7 +10,7 @@
     <h1>Generated Workout Plan</h1>
     <ul>
         <% workoutPlan.forEach((exercise) => { %>
-            <li><%= exercise.name %> - <%= exercise.description %> - <%= exercise.muscleGroup %></li>
+            <li><%= exercise.name %> - <%= exercise.description %> - <%= exercise.muscles_targeted - exercise.difficulty - exercsie.youtube_link %></li>
         <% }) %>
     </ul>
 </body>

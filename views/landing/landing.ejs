@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooking Demo</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="static\css\landing\landing.css" />
+    <!-- Custom CSS -->
+    <style>
+        /* Add margin bottom to each workout column */
+        .workout-col {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Workout Cool</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/"
+                            >Home <span class="sr-only">(current)</span></a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <h1 class="mt-5 mb-4 text-center">Workouts and Videos</h1>
+        <div class="row workout-row">
+            <% for (let i = 0; i < workoutPlan.length; i+=2) { %>
+            <div class="col-md-6 workout-col">
+                <div class="card container mb-4"> <!-- Added mb-4 class for margin bottom -->
+                    <h2 class="text-primary"><%= workoutPlan[i].name %></h2>
+                    <div class="recipe-video embed-responsive embed-responsive-16by9">
+                        <iframe
+                            class="embed-responsive-item"
+                            src="<%= workoutPlan[i].youtube_link %>"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div>
+                        <div class="card-body">
+                            <h3 class="text-success">Workout Description</h3>
+                            <ol>
+                                <li><%= workoutPlan[i].description %></li>
+                            </ol>
+                            <h3 class="text-info">Difficulty</h3>
+                            <ol>
+                                <li>Difficulty: <%= workoutPlan[i].difficulty %></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% if (i+1 < workoutPlan.length) { %>
+            <div class="col-md-6 workout-col">
+                <div class="card container mb-4"> <!-- Added mb-4 class for margin bottom -->
+                    <h2 class="text-primary"><%= workoutPlan[i+1].name %></h2>
+                    <div class="recipe-video embed-responsive embed-responsive-16by9">
+                        <iframe
+                            class="embed-responsive-item"
+                            src="<%= workoutPlan[i+1].youtube_link %>"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div>
+                        <div class="card-body">
+                            <h3 class="text-success">Workout Description</h3>
+                            <ol>
+                                <li><%= workoutPlan[i+1].description %></li>
+                            </ol>
+                            <h3 class="text-info">Difficulty</h3>
+                            <ol>
+                                <li>Difficulty: <%= workoutPlan[i+1].difficulty %></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% } %> <% } %>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
