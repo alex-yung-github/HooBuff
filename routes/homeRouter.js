@@ -26,7 +26,8 @@ app.post('/workoutform', (req,res) => {
 
 	const muscleGroup = [
 		{ name: "Back", value: "back" }, 
-		{ name: "Chest", value: "chest" }, 
+		{ name: "Chest", value: "chest" },
+		{ name: "Shoulder", value: "shoulder" }, 
 		{ name: "Legs", value: "legs" }, 
 		{ name: "Bicep", value: "bicep" }, 
 		{ name: "Tricep", value: "tricep" }, 

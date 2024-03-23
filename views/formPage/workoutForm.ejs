@@ -86,27 +86,47 @@
           <label for="category" class="form-label mb-1 label-text"
             ><p>Workout Category</p>
           </label>
-          <div class="button-group">
+          <div class="button-group" role="group">
+            <input
+              type="radio"
+              name="btnradio"
+              id="<%= workoutCategory[0].value %>"
+              class="btn-check"
+            />
+            <label for="<%= workoutCategory[0].value %>" class="btn btn-primary"
+              ><%= workoutCategory[0].name %></label
+            >
+            <input
+              type="radio"
+              name="btnradio"
+              id="<%= workoutCategory[1].value %>"
+              class="btn-check"
+            />
+            <label for="<%= workoutCategory[1].value %>" class="btn btn-primary"
+              ><%= workoutCategory[1].name %></label
+            >
+          </div>
+          <!--div class="button-group">
             <button
               class="btn btn-light btn-primary button mb-5"
               type="submit"
               name="category"
-              id="<%= workoutCategory[0].value %>"
-              value="<%= workoutCategory[0].value %>"
+              id="<1%= workoutCategory[0].value %>"
+              value="<1%= workoutCategory[0].value %>"
             >
-              <%= workoutCategory[0].name %>
+              <1%= workoutCategory[0].name %>
             </button>
 
             <button
               class="btn btn-light btn-primary button mb-5"
               type="submit"
               name="category"
-              id="<%= workoutCategory[1].value %>"
-              value="<%= workoutCategory[1].value %>"
+              id="<1%= workoutCategory[1].value %>"
+              value="<1%= workoutCategory[1].value %>"
             >
-              <%= workoutCategory[1].name %>
+              <1%= workoutCategory[1].name %>
             </button>
-          </div>
+          </div-->
 
           <div class="question">
             <label for="muscle" class="form-label mb-1"
