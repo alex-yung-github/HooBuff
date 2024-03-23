@@ -29,8 +29,8 @@ app.post('/workoutform', (req,res) => {
 		{ name: "Chest", value: "chest" },
 		{ name: "Shoulder", value: "shoulder" }, 
 		{ name: "Legs", value: "legs" }, 
-		{ name: "Bicep", value: "bicep" }, 
-		{ name: "Tricep", value: "tricep" }, 
+		{ name: "Bicep", value: "biceps" }, 
+		{ name: "Tricep", value: "triceps" }, 
 		{ name: "Abs", value: "abs" }, 
 	]
 

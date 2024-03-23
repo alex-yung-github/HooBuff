@@ -61,9 +61,9 @@ app.get('/error', (req, res) => {
 });
 
 // Function to get JSON file path based on muscle group
-function getJsonFilePath(muscleGroup, workoutType) {
+function getJsonFilePath(workoutType) {
     // Example logic to determine JSON file path based on muscle group
-    if(workoutType && workoutType.toLowerCase() === "gym"){
+    if(workoutType && workoutType.toLowerCase() == "gym"){
         return "exercise_json/gym/exercises.json";
     } else{
         return "exercise_json/calisthenics/exercises.json"
