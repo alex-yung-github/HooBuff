@@ -55,4 +55,4 @@ This project is currently not licensed.
 
 ---
 
-Thank you for checking out the Workout Selector website! We hope you find it useful in achieving your fitness goals. If you have any questions, suggestions, or feedback, feel free to [contact us](mailto:example@email.com). Happy exercising! 🏋️‍♂️💪
+Thank you for checking out the Hoo Buff website! We hope you find it useful in achieving your fitness goals. If you have any questions, suggestions, or feedback, feel free to [contact us](dhwa0301@gmail.com). Hoo's gonna get buff? You! 🏋️‍♂️💪
