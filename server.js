@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 
+const loading_router = require("./routes/load_workout_route")
+app.use(loading_router);
+
 //for static method
 const static_files_router = express.static('static')
 app.use( static_files_router )

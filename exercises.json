@@ -1,0 +1,103 @@
+[
+    {
+      "name": "Deadlift",
+      "description": "The deadlift is a weight training exercise in which a loaded barbell or bar is lifted off the ground to the level of the hips, then lowered back to the ground.",
+      "muscleGroup": "Back"
+    },
+    {
+      "name": "Squat",
+      "description": "The squat is a strength exercise in which the trainee lowers their hips from a standing position and then stands back up.",
+      "muscleGroup": "Legs"
+    },
+    {
+      "name": "Bench Press",
+      "description": "The bench press is an upper-body weight training exercise in which the trainee presses a weight upwards while lying on a weight training bench.",
+      "muscleGroup": "Chest"
+    },
+    {
+      "name": "Pull-up",
+      "description": "A pull-up is an upper-body strength exercise. The pull-up is performed with a palms-forward position.",
+      "muscleGroup": "Back"
+    },
+    {
+      "name": "Push-up",
+      "description": "A push-up is a common calisthenics exercise that targets the muscles of the chest, shoulders, and triceps.",
+      "muscleGroup": "Chest"
+    },
+    {
+      "name": "Leg Press",
+      "description": "The leg press is a weight training exercise in which the individual pushes a weight or resistance away from them using their legs.",
+      "muscleGroup": "Legs"
+    },
+    {
+      "name": "Barbell Row",
+      "description": "The barbell row is a compound exercise that targets multiple muscles in the back, including the lats, rhomboids, and traps.",
+      "muscleGroup": "Back"
+    },
+    {
+      "name": "Lunges",
+      "description": "Lunges are a single-leg bodyweight exercise that works your hips, glutes, quads, hamstrings, and core and improves balance and stability.",
+      "muscleGroup": "Legs"
+    },
+    {
+      "name": "Dumbbell Flyes",
+      "description": "Dumbbell flyes are a strength exercise that target the chest and shoulder muscles.",
+      "muscleGroup": "Chest"
+    },
+    {
+      "name": "Romanian Deadlift",
+      "description": "The Romanian deadlift is a variation of the conventional deadlift that targets the hamstrings, glutes, and lower back.",
+      "muscleGroup": "Legs"
+    },
+    {
+      "name": "Lat Pulldown",
+      "description": "The lat pulldown is a compound exercise that targets the latissimus dorsi muscle and other muscles of the back and arms.",
+      "muscleGroup": "Back"
+    },
+    {
+      "name": "Step-ups",
+      "description": "Step-ups are a lower-body exercise that targets the quadriceps, hamstrings, glutes, and calves.",
+      "muscleGroup": "Legs"
+    },
+    {
+      "name": "Chest Press Machine",
+      "description": "The chest press machine is a weight training exercise that primarily targets the pectoral muscles.",
+      "muscleGroup": "Chest"
+    },
+    {
+      "name": "Seated Cable Row",
+      "description": "The seated cable row is a compound exercise that targets the back muscles, including the latissimus dorsi and rhomboids.",
+      "muscleGroup": "Back"
+    },
+    {
+      "name": "Leg Curl",
+      "description": "The leg curl is a resistance exercise that targets the hamstrings and to a lesser extent, the glutes.",
+      "muscleGroup": "Legs"
+    },
+    {
+      "name": "Dumbbell Bench Press",
+      "description": "The dumbbell bench press is a variation of the bench press that uses dumbbells instead of a barbell.",
+      "muscleGroup": "Chest"
+    },
+    {
+      "name": "Good Mornings",
+      "description": "Good mornings are a compound exercise that targets the lower back, hamstrings, and glutes.",
+      "muscleGroup": "Legs"
+    },
+    {
+      "name": "Chin-up",
+      "description": "The chin-up is a strength training exercise. People frequently do this exercise with the intention of strengthening muscles such as the latissimus dorsi and biceps.",
+      "muscleGroup": "Back"
+    },
+    {
+      "name": "Hack Squat",
+      "description": "The hack squat is a machine-based exercise that targets the quadriceps, hamstrings, and glutes.",
+      "muscleGroup": "Legs"
+    },
+    {
+      "name": "Chest Fly Machine",
+      "description": "The chest fly machine is a resistance training machine used to strengthen the pectoralis major muscles of the chest.",
+      "muscleGroup": "Chest"
+    }
+  ]
+  

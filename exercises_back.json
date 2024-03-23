@@ -1,0 +1,18 @@
+[
+    {
+      "name": "Deadlift",
+      "description": "Deadlift description",
+      "muscleGroup": "Back"
+    },
+    {
+      "name": "Pull-up",
+      "description": "Pull-up description",
+      "muscleGroup": "Back"
+    },
+    {
+      "name": "Barbell Row",
+      "description": "Barbell Row description",
+      "muscleGroup": "Back"
+    }
+  ]
+  
