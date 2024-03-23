@@ -4,13 +4,13 @@ const path = require('path');
 const app = express.Router();
 
 // Route to handle generating workout plan
-app.get('/generate-workout', (req, res) => {
-    const muscleGroup = req.query.muscleGroup || 'fail';
-    const workoutType = req.query.workoutType;
-    const givenTime = req.query.givenTime;
-    const difficulty = req.query.difficulty;
-    const jsonFilePath = getJsonFilePath(muscleGroup, workoutType); // Get JSON file path based on muscle group
-
+app.post('/generate-workout', (req, res) => {
+    const workoutType = req.body.workoutType;
+    const givenTime = req.body.givenTime;
+    const difficulty = req.body.difficulty;
+    const muscle_groups = req.body.muscle_group_list || [];
+    const jsonFilePath = getJsonFilePath(workoutType); // Get JSON file path based on muscle group
+    
     // Check for valid values
     if (givenTime === undefined || isNaN(givenTime) || givenTime <= 0 || muscleGroup === 'fail') {
         // Redirect to error page
@@ -23,6 +23,7 @@ app.get('/generate-workout', (req, res) => {
         jsonFilePath,
         givenTime.toString(),
         difficulty.toString(),
+        JSON.stringify(exercisesList), // Convert exercisesList to JSON string
     ]);
   
     let result = '';
@@ -45,9 +46,7 @@ app.get('/generate-workout', (req, res) => {
         // Redirect to error page
         res.redirect('/error');
     });
-
 });
-
 
 // Error route
 app.get('/error', (req, res) => {
@@ -58,23 +57,9 @@ app.get('/error', (req, res) => {
 function getJsonFilePath(muscleGroup, workoutType) {
     // Example logic to determine JSON file path based on muscle group
     if(workoutType && workoutType.toLowerCase() === "gym"){
-        if (muscleGroup && muscleGroup.toLowerCase() === 'back') {
-            return "exercise_json/gym/exercises_back.json";
-        } else if (muscleGroup && muscleGroup.toLowerCase() === 'legs') {
-            return 'exercise_json/gym/exercises_legs.json';
-        } else {
-            return 'exercise_json/gym/exercises.json';
-        }
-    } else if(workoutType && workoutType.toLowerCase() === "cali"){
-        if (muscleGroup && muscleGroup.toLowerCase() === 'back') {
-            return 'exercise_json/cali/exercises_back.json';
-        } else if (muscleGroup && muscleGroup.toLowerCase() === 'legs') {
-            return 'exercise_json/cali/exercises_legs.json';
-        } else {
-            return 'exercise_json/cali/exercises.json';
-        }
-    } else {
-        return 'exercise_json/default.json'; // Handle default case
+        return "exercise_json/gym/exercises.json";
+    } else{
+        return "exercise_json/calisthenics/exercises.json"
     }
 }
 
