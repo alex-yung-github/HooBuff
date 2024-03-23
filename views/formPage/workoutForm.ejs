@@ -93,7 +93,7 @@
               id="<%= workoutCategory[0].value %>"
               class="btn-check"
             />
-            <label for="<%= workoutCategory[0].value %>" class="btn btn-primary"
+            <label for="<%= workoutCategory[0].value %>" class="category-button"
               ><%= workoutCategory[0].name %></label
             >
             <input
@@ -102,33 +102,29 @@
               id="<%= workoutCategory[1].value %>"
               class="btn-check"
             />
-            <label for="<%= workoutCategory[1].value %>" class="btn btn-primary"
+            <label for="<%= workoutCategory[1].value %>" class="category-button"
               ><%= workoutCategory[1].name %></label
             >
           </div>
 
-          <div class="question">
-            <label for="muscle" class="form-label mb-1"
-              ><p style="font-size: 1.7rem; font-weight: 500">
-                Select Target Muscle Group(s)
-              </p>
-            </label>
-            <div class="checkbox-container" id="muscle">
-              <% muscleGroup.forEach((muscle) => { %>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  value="<%= muscle.value %>"
-                  id="<%= muscle.value %>"
-                  name="muscleGroup[]"
-                />
-                <label for="<%= muscle.value %>" class="form-check-label"
-                  ><%= muscle.name %></label
-                >
-              </div>
-              <% }); %>
+          <label for="muscle" class="form-label mb-1"
+            ><p>Select Target Muscle Group(s)</p>
+          </label>
+          <div class="button-group-muscle" role="group" id="muscle">
+            <% muscleGroup.forEach((muscle) => { %>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="btn-check"
+                value="<%= muscle.value %>"
+                id="<%= muscle.value %>"
+                name="muscleGroup[]"
+              />
+              <label for="<%= muscle.value %>" class="muscle-button"
+                ><%= muscle.name %></label
+              >
             </div>
+            <% }); %>
           </div>
 
           <div class="form-questions">
@@ -187,6 +183,34 @@
       });
 
       document.getElementById("<%= category %>").checked = true;
+
+      // // Changing color of category button when clicked
+      // document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+      //   // Initial setup
+      //   if (radio.checked) {
+      //     document
+      //       .querySelector('label[for="' + this.id + '"]')
+      //       .classList.add("button-cicked");
+      //     l;
+      //   } else {
+      //     document
+      //       .querySelector('label[for="' + this.id + '"]')
+      //       .classList.remove("button-clicked");
+      //   }
+
+      //   radio.addEventListener("change", function () {
+      //     if (this.checked) {
+      //       document
+      //         .querySelector('label[for="' + this.id + '"]')
+      //         .classList.add("button-cicked");
+      //       l;
+      //     } else {
+      //       document
+      //         .querySelector('label[for="' + this.id + '"]')
+      //         .classList.remove("button-clicked");
+      //     }
+      //   });
+      // });
     </script>
   </body>
 </html>

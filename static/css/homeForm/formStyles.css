@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: white;
     height: 100%;
 }
 
@@ -7,11 +7,9 @@ h1 {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1em;
-    color: white;
 }
 
 p {
-    color: white;
 }
 
 /* Nav Bar */
@@ -50,7 +48,7 @@ section.hero img {
         transform: translateY(-10px);
     }
     to {
-        opacity: 0.6;
+        opacity: 0.4;
         transform: translateY(0);
     }
 }
@@ -78,13 +76,6 @@ section.hero img {
     color: gray;
 }
 
-.checkbox-container {
-    background-color: white;
-    padding: 0.75em;
-    border: 1px solid rgb(225, 225, 225);
-    border-radius: 5px;
-}
-
 .submit-button {
     display: block; 
     width: 8em; 
@@ -102,19 +93,54 @@ label p {
 }
 
 .button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-bottom: 3em;
 }
 
-.button {
+.category-button {
     display: block; 
     padding-top: 1em;
     padding-bottom: 1em;
-    padding-left: 4em;
-    padding-right: 4em;
-    margin: auto;
     font-size: 2rem;
     font-weight: 500;
-    box-shadow: 0px 0px 10px gray;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.4s ease;
+}
+
+.category-button:hover, .muscle-button:hover {
+    background-color: rgb(125, 177, 194);
+}
+
+.button-group-muscle {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));    /* Min 240px, Max 1fr */
+    margin-bottom: 3em;
+}
+
+.muscle-button {
+    width: 100%;
+    font-weight: 500;
+    background-color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 6px;
+    text-align: center;
+    transition: background-color 0.4s ease;
+}
+
+/* CSS for label that is next to a radio input that is checked */
+input[type="radio"]:checked + label {
+    background-color: lightblue;
+    box-shadow: 0px 0px 15px rgb(63, 63, 63);
+}
+
+/* CSS for label that is next to a radio input that is checked */
+input[type="checkbox"]:checked + label {
+    background-color: lightblue;
+    box-shadow: 0px 0px 10px rgb(63, 63, 63);
 }
