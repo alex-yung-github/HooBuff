@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(167, 143, 234);
+}
+
+.wave-effect {
+    font-size: 3rem;
+
+    /* Linear Gradient transitions background color smoothly (in this case from darkblue to lightblue and back in right direction */
+    background: linear-gradient(to right, darkblue, rgb(120, 195, 220), darkblue) repeat;
+
+    /* Gradient two times size of text: gives animation illusion since part of gradient is offscreen and coming into view */
+    background-size: 200% auto;
+
+    /* Necessary to accurately position linear gradient & clip it to shape of text */
+    display: inline-block;
+
+    -webkit-background-clip: text;      /* Specifies only text is changing color */
+    background-clip: text;      /* Linear Gradient Background is changed into shape of text */
+    color: transparent;         /* Text itself is not part of linear gradient so it is set as transparent */
+
+    animation: wave 2s linear infinite;     /* Animation change at constant speed (linear) infinitely (infinite) */
+}
+
+@keyframes wave {
+    /* Contrast to direction, perceived direction is right from 200% to 0 instead of left */
+    0% {
+        background-position: 200% 0;       /* At left */
+    }
+    100% {
+        background-position: 0 0;    /* At right */
+    }
+}
+
+.navbar-background {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.2s ease;    /* Transitions smoothly over 0.25 seconds */
+}
+
+@media (max-width: 991px) {
+    .navbar-background {
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+
+.navbar-background.scrolled {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.loading-menu {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
