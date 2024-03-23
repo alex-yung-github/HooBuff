@@ -40,7 +40,7 @@ app.post('/workoutform', (req,res) => {
 app.post('/loading', async (req,res) =>{
 	const workoutType = req.body.btnradio; // Retrieves the value of the selected radio button
 	console.log("pt 1: ", req.body)
-    const muscleGroups = req.body.muscle; // Retrieves an array of selected muscle groups (since it's checkboxes)
+    const muscleGroups = req.body.muscleGroup; // Retrieves an array of selected muscle groups (since it's checkboxes)
     const difficulty = req.body.experience; // Retrieves the value of the input field for gym experience
     const time = req.body.time;
 

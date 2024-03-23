@@ -19,7 +19,7 @@ app.post('/generate-workout', (req, res) => {
     const jsonFilePath = getJsonFilePath(workoutType); // Get JSON file path based on muscle group
     
     // Check for valid values
-    if (givenTime === undefined || isNaN(givenTime) || givenTime <= 0 || muscleGroup === 'fail') {
+    if (givenTime === undefined || isNaN(givenTime) || givenTime <= 0 || muscle_groups.length == 0) {
         // Redirect to error page
         return res.redirect('/error');
     }

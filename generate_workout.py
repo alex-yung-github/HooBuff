@@ -56,7 +56,6 @@ def generate_workout(json_file_path, given_time, target_difficulty, muscle_group
     total_exercises = round(min(len(compound_exercises) + len(isolation_exercises), given_time // avg_total_time_per_exercise))
     num_compound_exercises = round(total_exercises * 0.6)  # Assuming 60% of exercises are compound
     num_isolation_exercises = total_exercises - num_compound_exercises
-    print(total_exercises, num_compound_exercises, num_isolation_exercises)
     
     # Calculate average difficulty level
     average_difficulty = (calculate_average_difficulty(compound_exercises) + calculate_average_difficulty(isolation_exercises)) / 2
