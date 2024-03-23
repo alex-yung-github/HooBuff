@@ -2,17 +2,24 @@ const express = require('express');
 const { spawn } = require('child_process');
 const path = require('path');
 const app = express.Router();
+const bodyParser = require('body-parser');
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 
 // Route to handle generating workout plan
 app.post('/generate-workout', (req, res) => {
+    console.log("pt 2: ", req.body)
     const workoutType = req.body.workoutType;
-    const givenTime = req.body.givenTime;
+    const givenTime = req.body.time;
     const difficulty = req.body.difficulty;
-    const muscle_groups = req.body.muscle_group_list || [];
+    const muscle_groups = req.body.muscle || [];
     const jsonFilePath = getJsonFilePath(workoutType); // Get JSON file path based on muscle group
     
     // Check for valid values
-    if (givenTime === undefined || isNaN(givenTime) || givenTime <= 0 || muscleGroup === 'fail') {
+    if (givenTime === undefined || isNaN(givenTime) || givenTime <= 0 || muscle_groups.length == 0) {
         // Redirect to error page
         return res.redirect('/error');
     }
@@ -23,7 +30,7 @@ app.post('/generate-workout', (req, res) => {
         jsonFilePath,
         givenTime.toString(),
         difficulty.toString(),
-        JSON.stringify(exercisesList), // Convert exercisesList to JSON string
+        JSON.stringify(muscle_groups), // Convert exercisesList to JSON string
     ]);
   
     let result = '';
@@ -54,9 +61,9 @@ app.get('/error', (req, res) => {
 });
 
 // Function to get JSON file path based on muscle group
-function getJsonFilePath(muscleGroup, workoutType) {
+function getJsonFilePath(workoutType) {
     // Example logic to determine JSON file path based on muscle group
-    if(workoutType && workoutType.toLowerCase() === "gym"){
+    if(workoutType && workoutType.toLowerCase() == "gym"){
         return "exercise_json/gym/exercises.json";
     } else{
         return "exercise_json/calisthenics/exercises.json"

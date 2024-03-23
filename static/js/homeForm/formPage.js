@@ -34,17 +34,3 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
   }
 });
-
-// Switch which button is pressed
-document.querySelectorAll(".button").forEach(button => {
-    button.addEventListener('click', () => {
-        document.querySelectorAll(".button").forEach((buttons) => {
-            buttons.classList.remove("btn-primary");
-            buttons.classList.add("btn-light")
-        });
-
-        button.classList.add("btn-primary");
-
-        button.classList.remove("btn-light");
-    });
-});

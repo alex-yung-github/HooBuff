@@ -23,6 +23,13 @@ def convert_dict_keys_to_lowercase(input_dict):
 # Convert muscle_groups to lowercase keys
 muscle_groups = convert_dict_keys_to_lowercase(muscle_groups)
 
+#Gives more specific muscle groups
+def expand_muscle_groups(muscle_groups_desired):
+    specific_muscles = []
+    for muscle_group in muscle_groups_desired:
+        specific_muscles.extend(muscle_groups.get(muscle_group.lower(), []))
+    return specific_muscles
+
 # Function to calculate the average difficulty level of exercises
 def calculate_average_difficulty(exercises):
     total_difficulty = sum(exercise["difficulty"] for exercise in exercises)
@@ -30,10 +37,29 @@ def calculate_average_difficulty(exercises):
     return average_difficulty
 
 # Function to select random exercises based on muscle group and difficulty level
-def select_random_exercises(exercises, num_exercises, target_difficulty):
+def select_exercises(exercises, num_exercises, target_difficulty, expanded_muscle_groups):
     filtered_exercises = [exercise for exercise in exercises if abs(exercise["difficulty"] - target_difficulty) <= 2]  # Adjust the tolerance level as needed
-    selected_exercises = random.sample(filtered_exercises, min(num_exercises, len(filtered_exercises)))
-    return selected_exercises
+    
+    toReturn = []
+    maxScore = -1
+    for i in range(5):
+        selected_exercises = random.sample(filtered_exercises, min(num_exercises, len(filtered_exercises)))
+        already_targeted = []
+        score = 0
+        for s in selected_exercises:
+            muscle = s["muscles_targeted"]
+            for m in muscle:
+                m = m.lower()
+                if(m in expanded_muscle_groups):
+                    if(m not in already_targeted):
+                        score += 5
+                        already_targeted.append(m)
+                    else:
+                        score += 1
+        if(score > maxScore):
+            maxScore = score
+            toReturn = selected_exercises     
+    return toReturn
 
 # Main function to generate a workout plan
 def generate_workout(json_file_path, given_time, target_difficulty, muscle_groups_desired):
@@ -56,16 +82,18 @@ def generate_workout(json_file_path, given_time, target_difficulty, muscle_group
     total_exercises = round(min(len(compound_exercises) + len(isolation_exercises), given_time // avg_total_time_per_exercise))
     num_compound_exercises = round(total_exercises * 0.6)  # Assuming 60% of exercises are compound
     num_isolation_exercises = total_exercises - num_compound_exercises
-    print(total_exercises, num_compound_exercises, num_isolation_exercises)
     
     # Calculate average difficulty level
     average_difficulty = (calculate_average_difficulty(compound_exercises) + calculate_average_difficulty(isolation_exercises)) / 2
     
+    #Find expanded muscle groups
+    specific_muscles = expand_muscle_groups(muscle_groups_desired)
+
     # Randomly select compound and isolation exercises based on difficulty level
-    selected_compound_exercises = select_random_exercises(compound_exercises, num_compound_exercises, average_difficulty)
+    selected_compound_exercises = select_exercises(compound_exercises, num_compound_exercises, average_difficulty, specific_muscles)
     for i in selected_compound_exercises:
         i["sets"] = 4
-    selected_isolation_exercises = select_random_exercises(isolation_exercises, num_isolation_exercises, average_difficulty)
+    selected_isolation_exercises = select_exercises(isolation_exercises, num_isolation_exercises, average_difficulty, specific_muscles)
     for i in selected_isolation_exercises:
         i["sets"] = 3
     # Combine selected exercises
@@ -74,15 +102,18 @@ def generate_workout(json_file_path, given_time, target_difficulty, muscle_group
     return selected_exercises
 
 # Extract input arguments from the command line
-# json_file_path = sys.argv[1]  # Path to the JSON file containing exercise data
-# given_time = int(sys.argv[2])  # Total workout time in minutes
-# target_difficulty = int(sys.argv[3])  # Target difficulty level
-# muscle_groups_desired = json.loads(sys.argv[4])  # List of desired overall muscle groups
-muscle_groups_desired = ["back", "triceps"]
+json_file_path = sys.argv[1]  # Path to the JSON file containing exercise data
+given_time = int(sys.argv[2])  # Total workout time in minutes
+target_difficulty = int(sys.argv[3])  # Target difficulty level
+muscle_groups_desired = json.loads(sys.argv[4])  # List of desired overall muscle groups
+muscle_groups_desired = muscle_groups_desired.split(",")
 
 # Generate workout plan
-# workout_plan = generate_workout(json_file_path, given_time, target_difficulty, muscle_groups_desired)
-workout_plan = generate_workout("exercise_json/gym/exercises.json", 70, 5, muscle_groups_desired)
+workout_plan = generate_workout(json_file_path, given_time, target_difficulty, muscle_groups_desired)
+
+# For testing
+# muscle_groups_desired = ["back", "triceps"]
+# workout_plan = generate_workout("exercise_json/gym/exercises.json", 70, 5, muscle_groups_desired)
 
 # Print the workout plan as JSON to stdout
 print(json.dumps(workout_plan))
