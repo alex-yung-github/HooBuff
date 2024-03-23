@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .error-code {
+            font-size: 48px;
+            font-weight: bold;
+            color: #FF5733;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Oops! Something went wrong.</h1>
+    <% if (typeof errorCode !== 'undefined') { %>
+        <p class="error-code"><%= errorCode %></p>
+    <% } %>
+    <p>We're sorry, but there was an error processing your request.</p>
+    <p>Please try again later or contact support.</p>
+    <a href="/" class="back-link">Go back to home</a>
+</body>
+</html>

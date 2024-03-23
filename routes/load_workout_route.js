@@ -1,53 +1,81 @@
 const express = require('express');
 const { spawn } = require('child_process');
-const path = require('path'); // Import the 'path' module
+const path = require('path');
 const app = express.Router();
 
 // Route to handle generating workout plan
 app.get('/generate-workout', (req, res) => {
-    const numExercises = parseInt(req.query.numExercises) || 3;
-    const muscleGroup = req.query.muscleGroup || 'Back';
-    const jsonFilePath = getJsonFilePath(muscleGroup); // Get JSON file path based on muscle group
-  
-    // Spawn a Python child process to run the script
+    const muscleGroup = req.query.muscleGroup || 'fail';
+    const workoutType = req.query.workoutType;
+    const givenTime = req.query.givenTime;
+    const difficulty = req.query.difficulty;
+    const jsonFilePath = getJsonFilePath(muscleGroup, workoutType); // Get JSON file path based on muscle group
+
+    // Check for valid values
+    if (givenTime === undefined || isNaN(givenTime) || givenTime <= 0 || muscleGroup === 'fail') {
+        // Redirect to error page
+        return res.redirect('/error');
+    }
+
+    // Spawn a Python child process to run the script 
     const pythonProcess = spawn('python', [
-      'generate_workout.py',
-      jsonFilePath,
-      numExercises.toString(),
-      muscleGroup
+        'generate_workout.py',
+        jsonFilePath,
+        givenTime.toString(),
+        difficulty.toString(),
     ]);
   
     let result = '';
   
     // Collect output from the Python script
     pythonProcess.stdout.on('data', (data) => {
-      result += data.toString();
+        result += data.toString();
     });
   
-    // Handle Python script errors
+    // Handle data from Python script
+    pythonProcess.stdout.on('data', (data) => {
+        // Process the data and send to EJS template
+        const workoutPlan = JSON.parse(data);
+        res.render('testing/workout', { workoutPlan });
+    });
+
+    // Handle errors
     pythonProcess.stderr.on('data', (data) => {
-      console.error(`Python script error: ${data}`);
+        console.error(`Error from Python script: ${data}`);
+        // Redirect to error page
+        res.redirect('/error');
     });
-  
-    // Handle Python script exit
-    pythonProcess.on('close', (code) => {
-      const workoutPlan = JSON.parse(result);
-      res.render('testing/workout', { workoutPlan });
-    });
-  });
-  
+
+});
+
+
+// Error route
+app.get('/error', (req, res) => {
+    res.render('testing/error');
+});
+
 // Function to get JSON file path based on muscle group
-function getJsonFilePath(muscleGroup) {
+function getJsonFilePath(muscleGroup, workoutType) {
     // Example logic to determine JSON file path based on muscle group
-    if (muscleGroup === 'Back') {
-      return 'exercises_back.json';
-    } else if (muscleGroup === 'Legs') {
-      return 'exercises_legs.json'
+    if(workoutType && workoutType.toLowerCase() === "gym"){
+        if (muscleGroup && muscleGroup.toLowerCase() === 'back') {
+            return "exercise_json/gym/exercises_back.json";
+        } else if (muscleGroup && muscleGroup.toLowerCase() === 'legs') {
+            return 'exercise_json/gym/exercises_legs.json';
+        } else {
+            return 'exercise_json/gym/exercises.json';
+        }
+    } else if(workoutType && workoutType.toLowerCase() === "cali"){
+        if (muscleGroup && muscleGroup.toLowerCase() === 'back') {
+            return 'exercise_json/cali/exercises_back.json';
+        } else if (muscleGroup && muscleGroup.toLowerCase() === 'legs') {
+            return 'exercise_json/cali/exercises_legs.json';
+        } else {
+            return 'exercise_json/cali/exercises.json';
+        }
     } else {
-      return 'exercises.json'
+        return 'exercise_json/default.json'; // Handle default case
     }
-  }
+}
 
-
-
-  module.exports = app
+module.exports = app;
