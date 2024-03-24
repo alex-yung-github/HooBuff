@@ -95,7 +95,7 @@
                 <a href="/workoutform" class="nav-link">Create Workout</a>
                 </li>
                 <li class="nav-item">
-                <a href="#" class="nav-link">Exercise Info</a>
+                <a href="/information" class="nav-link">Exercise Info</a>
                 </li>
             </ul>
             </div>
@@ -115,6 +115,8 @@
                             <div class="card-body">
                                 <h3 class="text-dark">Exercise Description</h3>
                                 <p><%= workoutPlan[i].description %></p>
+                                <h3 class="text-info"> Sets and Reps </h3>
+                                <p> <%= workoutPlan[i].sets %> sets and <%= workoutPlan[i].reps %> reps</p>
                                 <h3 class="text-danger">Difficulty</h3>
                                 <p>On a scale of 10, the difficulty is <%= workoutPlan[i].difficulty %></p>
                                 <h3 class="text-warning"> Muscles Targeted</h3>
@@ -125,12 +127,11 @@
                                             <div class="card text-dark muscleCard mb-3">
                                                 <div class="card-body">
                                                     <p class="card-text fs-6 text-center"><%= workoutPlan[i].muscles_targeted[k] %></p>
-                                                </div>
+                                                </div>  
                                             </div>
                                         </div>
                                     <% } %>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -144,6 +145,8 @@
                             <div class="card-body">
                                 <h3 class="text-dark">Exercise Description</h3>
                                 <p><%= workoutPlan[i+1].description %></p>
+                                <h3 class="text-info"> Sets and Reps </h3>
+                                <p> <%= workoutPlan[i+1].sets %> sets and <%= workoutPlan[i+1].reps %> reps</p>
                                 <h3 class="text-danger">Difficulty</h3>
                                 <p>On a scale of 10, the difficulty is <%= workoutPlan[i+1].difficulty %></p>
                                 <h3 class="text-warning"> Muscles Targeted</h3>
