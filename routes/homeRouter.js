@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express.Router();
+const fs = require('fs');
 
 // Adding New Routers
 // const loading_router = require("./routes/load_workout_route")
@@ -58,7 +59,10 @@ app.post('/loading', async (req,res) =>{
 
 // Get Request to Search Page
 app.get('/search', (req, res) => {
-	res.render("formPage/search.ejs")
+	// Read JSON file
+	const jsonExercises = JSON.parse(fs.readFileSync('exercise_json/gym/exercises.json'));
+
+	res.render("formPage/search.ejs", { jsonExercises })
 });
 
 module.exports = app

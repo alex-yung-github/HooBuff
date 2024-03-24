@@ -1,0 +1,326 @@
+{
+    "abs": {
+      "compound": [
+          {
+              "name": "Hanging Leg Raise",
+              "description": "The hanging leg raise is a compound exercise that targets the rectus abdominis and hip flexors.",
+              "muscles_targeted": ["Rectus abdominis", "Hip flexors"],
+              "img": "https://www.youtube.com/watch?v=JB2oyawG9KI",
+              "difficulty": 5
+          },
+          {
+              "name": "Ab Wheel Rollout",
+              "description": "The ab wheel rollout is a compound exercise that targets the rectus abdominis and obliques.",
+              "muscles_targeted": ["Rectus abdominis", "Obliques"],
+              "img": "https://www.youtube.com/watch?v=O9gf6clHgNc",
+              "difficulty": 6
+          },
+          {
+              "name": "Mountain Climbers",
+              "description": "Mountain climbers are a compound exercise that target the rectus abdominis, obliques, and hip flexors.",
+              "muscles_targeted": ["Rectus abdominis", "Obliques", "Hip flexors"],
+              "img": "https://www.youtube.com/watch?v=nmwgirgXLYM",
+              "difficulty": 4
+          },
+          {
+              "name": "Russian Twists",
+              "description": "Russian twists are a compound exercise that target the obliques and transversus abdominis.",
+              "muscles_targeted": ["Obliques", "Transversus abdominis"],
+              "img": "https://www.youtube.com/watch?v=wkD8rjkodUI",
+              "difficulty": 3
+          },
+          {
+              "name": "Burpees",
+              "description": "Burpees are a compound exercise that target the rectus abdominis, obliques, and hip flexors.",
+              "muscles_targeted": ["Rectus abdominis", "Obliques", "Hip flexors"],
+              "img": "https://www.youtube.com/watch?v=JZQA08SlJnM",
+              "difficulty": 7
+          }
+      ],
+      "isolation": [
+          {
+              "name": "Crunches",
+              "description": "Crunches are an isolation exercise that primarily target the rectus abdominis.",
+              "muscles_targeted": ["Rectus abdominis"],
+              "img": "https://www.youtube.com/watch?v=Xyd_fa5zoEU",
+              "difficulty": 2
+          },
+          {
+              "name": "Leg Raises",
+              "description": "Leg raises are an isolation exercise that primarily target the lower rectus abdominis and hip flexors.",
+              "muscles_targeted": ["Rectus abdominis", "Hip flexors"],
+              "img": "https://www.youtube.com/watch?v=iP2fjvRzbT4",
+              "difficulty": 3
+          },
+          {
+              "name": "Bicycle Crunches",
+              "description": "Bicycle crunches are an isolation exercise that target the obliques and rectus abdominis.",
+              "muscles_targeted": ["Obliques", "Rectus abdominis"],
+              "img": "https://www.youtube.com/watch?v=9FGilxCbdz8",
+              "difficulty": 3
+          },
+          {
+              "name": "Plank",
+              "description": "The plank is an isolation exercise that targets the rectus abdominis, obliques, and transversus abdominis.",
+              "muscles_targeted": ["Rectus abdominis", "Obliques", "Transversus abdominis"],
+              "img": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
+              "difficulty": 3
+          },
+          {
+              "name": "Flutter Kicks",
+              "description": "Flutter kicks are an isolation exercise that primarily target the lower rectus abdominis and hip flexors.",
+              "muscles_targeted": ["Rectus abdominis", "Hip flexors"],
+              "img": "https://www.youtube.com/watch?v=NBvZXT_Rmo4",
+              "difficulty": 2
+          }
+      ]
+    },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    "shoulders": {
+      "compound": [
+          {
+              "name": "Military Press",
+              "description": "The military press is a compound exercise that primarily targets the deltoid muscles.",
+              "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral"],
+              "img": "https://www.youtube.com/watch?v=2yjwXTZQDDI",
+              "difficulty": 6
+          },
+          {
+              "name": "Push Press",
+              "description": "The push press is a compound exercise that targets the deltoid muscles and triceps.",
+              "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral", "Triceps"],
+              "img": "https://www.youtube.com/watch?v=tMAiAxRIqTU",
+              "difficulty": 7
+          },
+          {
+              "name": "Arnold Press",
+              "description": "The Arnold press is a compound exercise that targets all three heads of the deltoids.",
+              "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral", "Deltoid Posterior"],
+              "img": "https://www.youtube.com/watch?v=vj2w851ZHRM",
+              "difficulty": 6
+          },
+          {
+              "name": "Clean and Press",
+              "description": "The clean and press is a compound exercise that targets the deltoid muscles, trapezius, and upper back.",
+              "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral", "Trapezius", "Upper back"],
+              "img": "https://www.youtube.com/watch?v=Rxr9HZcxFGE",
+              "difficulty": 8
+          },
+          {
+              "name": "Handstand Push-Up",
+              "description": "The handstand push-up is a compound exercise that primarily targets the deltoid muscles and triceps.",
+              "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral", "Triceps"],
+              "img": "https://www.youtube.com/watch?v=5XO-gtsqxa4",
+              "difficulty": 8
+          }
+      ],
+      "isolation": [
+          {
+              "name": "Lateral Raises",
+              "description": "Lateral raises are an isolation exercise that target the deltoid muscles.",
+              "muscles_targeted": ["Deltoid Lateral"],
+              "img": "https://www.youtube.com/watch?v=MYVXhZzAnFI",
+              "difficulty": 3
+          },
+          {
+              "name": "Front Raises",
+              "description": "Front raises are an isolation exercise that target the anterior deltoid.",
+              "muscles_targeted": ["Deltoid Anterior"],
+              "img": "https://www.youtube.com/watch?v=qTlXi9zTVz4",
+              "difficulty": 3
+          },
+          {
+              "name": "Rear Delt Flyes",
+              "description": "Rear delt flyes are an isolation exercise that target the posterior deltoid.",
+              "muscles_targeted": ["Deltoid Posterior"],
+              "img": "https://www.youtube.com/watch?v=09YjAxT2AtI",
+              "difficulty": 4
+          },
+          {
+              "name": "Reverse Pec Deck Flyes",
+              "description": "Reverse pec deck flyes are an isolation exercise that target the posterior deltoid.",
+              "muscles_targeted": ["Deltoid Posterior"],
+              "img": "https://www.youtube.com/watch?v=yoEhPDD7u1M",
+              "difficulty": 4
+          },
+          {
+              "name": "External Rotation",
+              "description": "External rotation is an isolation exercise that targets the rotator cuff muscles, specifically the infraspinatus and teres minor.",
+              "muscles_targeted": ["Rotator cuff infraspinatus", "Rotator cuff teres minor"],
+              "img": "https://www.youtube.com/watch?v=dlEPjUgvrm4",
+              "difficulty": 3
+          }
+      ]
+    },
+  
+  
+  
+  
+  
+  
+    "legs": {
+      "compound": [
+          {
+              "name": "Squats",
+              "description": "Squats are a compound exercise that primarily targets the quadriceps, hamstrings, and glutes.",
+              "muscles_targeted": ["Quadriceps", "Hamstrings", "Glutes"],
+              "img": "https://www.youtube.com/watch?v=U3H32JPXyWY",
+              "difficulty": 7
+          },
+          {
+              "name": "Deadlift",
+              "description": "The deadlift is a compound exercise that targets the hamstrings, glutes, lower back, and grip strength.",
+              "muscles_targeted": ["Hamstrings", "Glutes", "Lower back"],
+              "img": "https://www.youtube.com/watch?v=I1X2xh-fsro",
+              "difficulty": 8
+          },
+          {
+              "name": "Lunges",
+              "description": "Lunges are a compound exercise that target the quadriceps, hamstrings, and glutes.",
+              "muscles_targeted": ["Quadriceps", "Hamstrings", "Glutes"],
+              "img": "https://www.youtube.com/watch?v=QOVaHwm-Q6U",
+              "difficulty": 5
+          },
+          {
+              "name": "Leg Press",
+              "description": "The leg press is a compound exercise that primarily targets the quadriceps, hamstrings, and glutes.",
+              "muscles_targeted": ["Quadriceps", "Hamstrings", "Glutes"],
+              "img": "https://www.youtube.com/watch?v=t4y3TsDkv6c",
+              "difficulty": 6
+          },
+          {
+              "name": "Step-Ups",
+              "description": "Step-ups are a compound exercise that target the quadriceps, hamstrings, and glutes.",
+              "muscles_targeted": ["Quadriceps", "Hamstrings", "Glutes"],
+              "img": "https://www.youtube.com/watch?v=ikGl7hnRJJM",
+              "difficulty": 5
+          }
+      ],
+      "isolation": [
+          {
+              "name": "Leg Curl",
+              "description": "The leg curl is an isolation exercise that targets the hamstrings.",
+              "muscles_targeted": ["Hamstrings"],
+              "img": "https://www.youtube.com/watch?v=JB2oyawG9KI",
+              "difficulty": 4
+          },
+          {
+              "name": "Leg Extension",
+              "description": "The leg extension is an isolation exercise that primarily targets the quadriceps.",
+              "muscles_targeted": ["Quadriceps"],
+              "img": "https://www.youtube.com/watch?v=zA3M07AFZBk",
+              "difficulty": 4
+          },
+          {
+              "name": "Calf Raises",
+              "description": "Calf raises are an isolation exercise that primarily target the calves.",
+              "muscles_targeted": ["Calves"],
+              "img": "https://www.youtube.com/watch?v=2l2zpa9_2KQ",
+              "difficulty": 3
+          },
+          {
+              "name": "Hamstring Curl Machine",
+              "description": "The hamstring curl machine is an isolation exercise that targets the hamstrings.",
+              "muscles_targeted": ["Hamstrings"],
+              "img": "https://www.youtube.com/watch?v=JApfqz52esA",
+              "difficulty": 4
+          },
+          {
+              "name": "Seated Calf Raises",
+              "description": "Seated calf raises are an isolation exercise that primarily target the calves.",
+              "muscles_targeted": ["Calves"],
+              "img": "https://www.youtube.com/watch?v=CH8kE0O5J1A",
+              "difficulty": 3
+          }
+      ]
+    },
+  
+  
+  
+  
+  
+    "chest": {
+      "compound": [
+          {
+              "name": "Bench Press",
+              "description": "The bench press is a compound exercise that targets the pectoralis major (upper, middle, and lower), deltoids, and triceps.",
+              "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower", "Deltoids", "Triceps"],
+              "img": "https://www.youtube.com/watch?v=gRVjAtPip0Y",
+              "difficulty": 7
+          },
+          {
+              "name": "Push-Ups",
+              "description": "Push-ups are a compound exercise that primarily target the pectoralis major (upper, middle, and lower), deltoids, and triceps.",
+              "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower", "Deltoids", "Triceps"],
+              "img": "https://www.youtube.com/watch?v=_l3ySVKYVJ8",
+              "difficulty": 5
+          },
+          {
+              "name": "Dips",
+              "description": "Dips are a compound exercise that target the pectoralis major (lower), deltoids, and triceps.",
+              "muscles_targeted": ["Pectoralis major lower", "Deltoids", "Triceps"],
+              "img": "https://www.youtube.com/watch?v=2z8JmcrW-As",
+              "difficulty": 6
+          },
+          {
+              "name": "Incline Bench Press",
+              "description": "The incline bench press is a compound exercise that targets the upper portion of the pectoralis major, deltoids, and triceps.",
+              "muscles_targeted": ["Pectoralis major upper", "Deltoids", "Triceps"],
+              "img": "https://www.youtube.com/watch?v=Bkd0LFKLq9Q",
+              "difficulty": 7
+          },
+          {
+              "name": "Decline Bench Press",
+              "description": "The decline bench press is a compound exercise that targets the lower portion of the pectoralis major, deltoids, and triceps.",
+              "muscles_targeted": ["Pectoralis major lower", "Deltoids", "Triceps"],
+              "img": "https://www.youtube.com/watch?v=grjm4rWm4w0",
+              "difficulty": 7
+          }
+      ],
+      "isolation": [
+          {
+              "name": "Chest Flyes",
+              "description": "Chest flyes are an isolation exercise that primarily target the pectoralis major (upper, middle, and lower).",
+              "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
+              "img": "https://www.youtube.com/watch?v=DLwVxel6L3k",
+              "difficulty": 4
+          },
+          {
+              "name": "Cable Crossover",
+              "description": "The cable crossover is an isolation exercise that primarily targets the pectoralis major (upper, middle, and lower).",
+              "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
+              "img": "https://www.youtube.com/watch?v=PH6k5bn1Jio",
+              "difficulty": 5
+          },
+          {
+              "name": "Dumbbell Flyes",
+              "description": "Dumbbell flyes are an isolation exercise that primarily target the pectoralis major (upper, middle, and lower).",
+              "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
+              "img": "https://www.youtube.com/watch?v=7oYiSo5vaH8",
+              "difficulty": 4
+          },
+          {
+              "name": "Machine Chest Press",
+              "description": "The machine chest press is an isolation exercise that primarily targets the pectoralis major (upper, middle, and lower).",
+              "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
+              "img": "https://www.youtube.com/watch?v=OtOBf3T7FRE",
+              "difficulty": 5
+          },
+          {
+              "name": "Pec Deck Machine",
+              "description": "The pec deck machine is an isolation exercise that primarily targets the pectoralis major (upper, middle, and lower).",
+              "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
+              "img": "https://www.youtube.com/watch?v=rFwiE3Uv0Tg",
+              "difficulty": 4
+          }
+      ]
+    }
+  }      

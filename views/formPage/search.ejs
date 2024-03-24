@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search</title>
+    <title>Search Exercises</title>
     <!-- Bootstrap 5 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -28,6 +28,12 @@
 
     <!-- Include TypeIt.js for type effect-->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    <!-- Font Awesome's Search Icon Library -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav
@@ -53,28 +59,149 @@
               <a href="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="/workoutform" class="nav-link active">Create Workout</a>
+              <a href="/workoutform" class="nav-link">Create Workout</a>
             </li>
             <li class="nav-item">
-              <a href="/search" class="nav-link">Search Exercise</a>
+              <a href="/search" class="nav-link active">Search Exercises</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <h1>Enter an exercise:</h1>
+    <section class="hero">
+      <img
+        src="img//homeForm/search-hero.jpg"
+        alt="Hero Image"
+        class="fade-in-top-img"
+        id="hero-img"
+      />
+      <div class="container" id="hero-container">
+        <h1>Enter an exercise:</h1>
+        <div>
+          <div class="input-group searchbar">
+            <input
+              type="search"
+              class="form-control"
+              name="searchbar"
+              id="searchbar"
+              placeholder="Search"
+            />
+            <button type="button" class="btn btn-primary" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="result-container">
+            <ul class="result" id="result"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercise-info" id="exercise-info"></div>
+    </section>
 
     <script src="js/homeForm/searchPage.js"></script>
     <script>
-      // Pre-Filling Clothing Category Based on Answer to Previous Form
-      document.querySelectorAll('input[type="radio"]').forEach((radio) => {
-        radio.checked = false;
-      });
+      /* Search Bar Algorithm */
+      document.addEventListener("DOMContentLoaded", () => {
+        let ul = document.getElementById('result');
+        ul.innerHTML = '';
 
-      if ("<%= category %>" !== "") {
-        document.getElementById("<%= category %>").checked = true;
-      }
+        const jsonExercises = <%- JSON.stringify(jsonExercises) %>;
+        let exercisesArr = [];
+
+        // Think of exercises as a dictionary: group is the key, exercises[group] is the value: muscle
+        Object.keys(jsonExercises).forEach((group) => {
+          const muscle = jsonExercises[group];
+
+          // category is key, muscle[category] is value
+          Object.keys(muscle).forEach((category) => {
+            const exercises = muscle[category]; // Array of exercises
+            exercises.forEach((exercise) => {
+              exercisesArr.push(exercise);
+            });
+          });
+        });
+
+        const searchbar = document.getElementById('searchbar');
+        let count;
+        let exerciseLower, userLower;   // Exercise name and user input in lower case
+
+        // When User Inputs Something
+        searchbar.addEventListener("input", () => {
+          displayMenu();
+        });  // as user inputs
+
+        // If anywhere other than search bar clicked, then the search menu "collapses"
+        document.addEventListener('click', (event) => {
+          if (event.target !== searchbar) {   // event.target returns a DOM element
+            ul.innerHTML = '';
+          }
+        });
+
+        // When User Clicks Search Bar
+        searchbar.addEventListener('click', () => {
+          displayMenu();
+        });
+
+        // Display Menu of Search Bar - Search Algorithm
+        function displayMenu() {
+          ul.innerHTML = '';    // Clear ul
+          count = 0;
+
+          let userInput = searchbar.value;
+          exercisesArr.forEach((exercise) => {
+            exerciseLower = exercise.name.toLowerCase();
+            userLower = userInput.toLowerCase();
+
+            // Display results similar to user input by exercise name
+            if ((exerciseLower.includes(userLower) || userLower.includes(exerciseLower)) && count < 10) {
+              // Add new li with span element into result list
+              let li = document.createElement('li');
+              let span = document.createElement('span');
+              span.textContent = exercise.name;
+              li.appendChild(span);
+              ul.appendChild(li);
+
+              count++;
+            }
+          });
+
+          searchbarManipulation();
+        }
+
+        // Search Bar Click Interface
+        function searchbarManipulation() {
+          // If li clicked, text in li should replace user input
+          let liList = document.querySelectorAll('li');
+          for (let i = 0; i < liList.length; i++) {
+            // Using let instead of const means only last item is stored in searchbar by each addEventListener
+            const result = liList[i];   // should be constant so that addEventListener is specific to this list item
+
+            result.addEventListener('click', function() {
+              searchbar.value = result.querySelector('span').textContent;
+              ul.innerHTML = '';
+            });
+          }
+        }
+
+        const exerciseInfo = document.getElementById('exercise-info');
+        const searchBtn = document.getElementById("search-btn");
+        searchBtn.addEventListener('click', () => {
+          // TO-DO: Implement Code - use searchbar.value which represents exercise name
+          exercisesArr.forEach(exercise => {
+            if (exercise.name.toLowerCase() === searchbar.value.toLowerCase()) {
+              // Implement Display Exercise
+              /*
+              Achieving EJS like format:
+               - exerciseInfo.innerHTML = / * HTML * /
+               - ${exercise.name} instead of < %= exercise.name % >
+              */
+              console.log(exercise.description);
+            }
+          });
+        });
+      });
     </script>
   </body>
 </html>
