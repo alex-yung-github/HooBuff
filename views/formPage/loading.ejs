@@ -56,13 +56,14 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="/" class="nav-link active">Home</a>
+              <a href="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="/workoutform" class="nav-link">Create Workout</a>
+              <a href="/workoutform" class="nav-link">Create Workout</a>
             </li>
             <li class="nav-item">
-              <a href="/information" class="nav-link">Exercise Info</a>
+              <a href="/search" class="nav-link">Search Exercises</a>
             </li>
           </ul>
         </div>
@@ -77,17 +78,16 @@
 
     <script>
       // Delay the form submission for 3 seconds
-      setTimeout(function() {
-            document.getElementById('form').submit();
+      setTimeout(function () {
+        document.getElementById("form").submit();
       }, 1500);
     </script>
     <form id="form" action="/generate-workout" method="POST">
       <!-- Include hidden fields to pass the form data -->
-      <input type="hidden" name="workoutType" value="<%= workoutType %>">
-      <input type="hidden" name="muscle" value="<%= muscleGroups %>">
-      <input type="hidden" name="difficulty" value="<%= difficulty %>">
-      <input type="hidden" name="time" value="<%= time %>">
-  </form>
-
+      <input type="hidden" name="workoutType" value="<%= workoutType %>" />
+      <input type="hidden" name="muscle" value="<%= muscleGroups %>" />
+      <input type="hidden" name="difficulty" value="<%= difficulty %>" />
+      <input type="hidden" name="time" value="<%= time %>" />
+    </form>
   </body>
 </html>
