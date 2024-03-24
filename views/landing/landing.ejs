@@ -66,6 +66,9 @@
     </head>
     <body>
         <!-- Nav Bar -->
+
+        <img src="img/workoutImages/skullcrusher.jpg" alt="Skull Crusher Exercise">
+
         <nav
         class="navbar navbar-expand-lg fixed-top navbar-dark navbar-background"
         id="navbar"
@@ -107,7 +110,7 @@
                 <div class="col-md-6 workout-col">
                     <div class="card container mb-4 p-4"> <!-- Added padding -->
                         <h2 class="text-dark"><%= workoutPlan[i].name %></h2>
-                        <img class="embed-responsive-item" src="<%= workoutPlan[i].img %>"></img>
+                        <img class="embed-responsive-item" src="/<%= workoutPlan[i].img %>"></img>
                         <div>
                             <div class="card-body">
                                 <h3 class="text-dark">Exercise Description</h3>
@@ -136,7 +139,7 @@
                 <div class="col-md-6 workout-col">
                     <div class="card container mb-4 p-4"> <!-- Added padding -->
                         <h2 class="text-dark"><%= workoutPlan[i+1].name %></h2>
-                        <img class="embed-responsive-item" src= <%= workoutPlan[i+1].img %>></img>
+                        <img class="embed-responsive-item" src= "./<%= workoutPlan[i+1].img %>"></img>
                         <div>
                             <div class="card-body">
                                 <h3 class="text-dark">Exercise Description</h3>
@@ -163,6 +166,7 @@
                 <% } %> <% } %>
             </div>
         </div>
+        
         <!-- Bootstrap JS and dependencies -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>

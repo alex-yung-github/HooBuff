@@ -5,7 +5,7 @@
               "name": "Close-Grip Bench Press",
               "description": "The close-grip bench press is a compound exercise that targets the triceps, chest, and shoulders.",
               "muscles_targeted": ["Triceps", "Pectoralis major", "Deltoid Anterior"],
-              "img": "/img/workoutImages/closegrip.jpg",
+              "img": "img/workoutImages/closegrip.jpg",
               "difficulty": 5,
               "reps": "6-8"
           },
@@ -13,7 +13,7 @@
               "name": "Dips",
               "description": "Dips are a compound exercise that primarily target the triceps, chest, and shoulders.",
               "muscles_targeted": ["Triceps", "Pectoralis major", "Deltoid Anterior"],
-              "img": "/img/workoutImages/dip.jpg",
+              "img": "img/workoutImages/dip.jpg",
               "difficulty": 6,
               "reps": "10-12"
           },
@@ -28,8 +28,8 @@
           {
               "name": "Skull Crushers",
               "description": "Skull crushers are an isolation exercise that target the triceps.",
-              "muscles_targeted": ["Triceps"],
-              "img": "/img/workoutImages/skullcrusher.jpg",
+              "muscles_targeted": ["Long head", "Lateral head"],
+              "img": ".img/workoutImages/skull_crushers.jpg",
               "difficulty": 5,
               "reps": "8-12"
           },
@@ -37,7 +37,7 @@
               "name": "Diamond Push-Ups",
               "description": "Diamond push-ups are a bodyweight exercise that primarily target the triceps.",
               "muscles_targeted": ["Triceps"],
-              "img": "/img/workoutImages/diamondpushup.jpg",
+              "img": "img/workoutImages/diamondpushup.jpg",
               "difficulty": 3,
               "reps": "8-12"
           },
@@ -45,7 +45,7 @@
               "name": "Triceps Dips",
               "description": "Triceps dips are a compound exercise that primarily target the triceps, chest, and shoulders.",
               "muscles_targeted": ["Triceps", "Pectoralis major", "Deltoid Anterior"],
-              "img": "/img/workoutImages/tricepdips.jpg",
+              "img": "img/workoutImages/tricepdips.jpg",
               "difficulty": 5,
               "reps": "5-10"
           }
@@ -55,7 +55,7 @@
               "name": "Triceps Kickbacks",
               "description": "Triceps kickbacks are an isolation exercise that target the triceps.",
               "muscles_targeted": ["Triceps"],
-              "img": "/img/workoutImages/tricep_kickback.jpg",
+              "img": "img/workoutImages/tricep_kickback.jpg",
               "difficulty": 4,
               "reps": "8-12"
           },
@@ -63,7 +63,7 @@
               "name": "Cable Triceps Pushdown",
               "description": "The cable triceps pushdown is an isolation exercise that targets the triceps.",
               "muscles_targeted": ["Triceps"],
-              "img": "/img/workoutIMages/singlearmdumbellrow.jpg",
+              "img": "img/workoutIMages/singlearmdumbellrow.jpg",
               "difficulty": 4,
               "reps": "12-15"
           },
@@ -71,7 +71,7 @@
               "name": "Triceps Rope Pushdown",
               "description": "The triceps rope pushdown is an isolation exercise that targets the triceps.",
               "muscles_targeted": ["Triceps"],
-              "img": "/img/workoutImages/tricepropepush.jpg",
+              "img": "img/workoutImages/tricepropepush.jpg",
               "difficulty": 4,
               "reps": "12-15"
           },
@@ -79,7 +79,7 @@
               "name": "Single-Arm Cable Triceps Extension",
               "description": "The single-arm cable triceps extension is an isolation exercise that targets the triceps.",
               "muscles_targeted": ["Triceps"],
-              "img": "/img/workoutImages/singlearmtricepextension.jpg",
+              "img": "img/workoutImages/singlearmtricepextension.jpg",
               "difficulty": 4,
               "reps": "12-15"
           },
@@ -87,7 +87,7 @@
               "name": "Dumbbell Triceps Extension",
               "description": "The dumbbell triceps extension is an isolation exercise that targets the triceps.",
               "muscles_targeted": ["Triceps"],
-              "img": "/img/workoutImages/dumbelltricepextension.jpg",
+              "img": "img/workoutImages/dumbelltricepextension.jpg",
               "difficulty": 4,
               "reps": "10-12"
           },
@@ -95,7 +95,7 @@
               "name": "Machine Triceps Extension",
               "description": "The machine triceps extension is an isolation exercise that targets the triceps.",
               "muscles_targeted": ["Triceps"],
-              "img": "/img/workoutImages/machinetricepext.jpg",
+              "img": "img/workoutImages/machinetricepext.jpg",
               "difficulty": 3,
               "reps": "10-12"
           },
@@ -103,7 +103,7 @@
               "name": "Triceps Overhead Extension with Rope",
               "description": "The triceps overhead extension with rope is an isolation exercise that targets the triceps.",
               "muscles_targeted": ["Triceps"],
-              "img": "/img/workoutImages/singlearmtricepextension.jpg",
+              "img": "img/workoutImages/singlearmtricepextension.jpg",
               "difficulty": 4,
               "reps":"10-12"
           }
@@ -122,7 +122,7 @@
               "name": "Deadlift",
               "description": "The deadlift is a weight training exercise in which a loaded barbell or bar is lifted off the ground to the level of the hips, then lowered back to the ground.",
               "muscles_targeted": ["Erector spinae", "Glutes", "Hamstrings", "Quadriceps"],
-              "img": "/img/workoutImages/deadlift.jpg",
+              "img": "img/workoutImages/deadlift.jpg",
               "difficulty": 8,
               "reps": "1-3"
           },
@@ -130,7 +130,7 @@
               "name": "Pull-up",
               "description": "A pull-up is an upper-body strength exercise. The pull-up is performed with a palms-forward position.",
               "muscles_targeted": ["Latissimus dorsi", "Long head Biceps", "Trapezius"],
-              "img": "/img/workoutImages/pullup.jpg",
+              "img": "img/workoutImages/pullup.jpg",
               "difficulty": 6,
               "reps": "5-8"
           },
@@ -138,7 +138,7 @@
               "name": "Barbell Row",
               "description": "The barbell row is a compound exercise that targets multiple muscles in the back, including the latissimus dorsi, rhomboids, and traps.",
               "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius", "Forearms"],
-              "img": "/img/workoutImages/barbellR.jpg",
+              "img": "img/workoutImages/barbellR.jpg",
               "difficulty": 7,
               "reps": "6-8"
           },
@@ -146,7 +146,7 @@
               "name": "Lat Pulldown",
               "description": "The lat pulldown is a compound exercise that targets the latissimus dorsi muscle and other muscles of the back and arms.",
               "muscles_targeted": ["Latissimus dorsi", "Trapezius", "Rhomboids", "Long head Biceps"],
-              "img": "/img/workoutImages/latpulldown.jpg",
+              "img": "img/workoutImages/latpulldown.jpg",
               "difficulty": 5,
               "reps": "10-12"
           },
@@ -154,7 +154,7 @@
               "name": "T-Bar Row",
               "description": "The T-bar row is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi and rhomboids.",
               "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius", "Long head Biceps"],
-              "img": "/img/workoutImages/t-bar.jpg",
+              "img": "img/workoutImages/t-bar.jpg",
               "difficulty": 6,
               "reps": "8-10"
           },
@@ -162,7 +162,7 @@
               "name": "Pendlay Row",
               "description": "The Pendlay row is a variation of the barbell row that emphasizes explosive power and targets the upper back muscles.",
               "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius", "Forearms"],
-              "img": "/img/workoutImages/pendlay.jpg",
+              "img": "img/workoutImages/pendlay.jpg",
               "difficulty": 7,
               "reps": "5-7"
           },
@@ -170,7 +170,7 @@
               "name": "Rack Pull",
               "description": "The rack pull is a partial deadlift variation that focuses on the upper back, traps, and grip strength.",
               "muscles_targeted": ["Upper back", "Trapezius", "Forearms", "Glutes", "Hamstrings"],
-              "img": "/img/workoutImages/rackpull.jpg",
+              "img": "img/workoutImages/rackpull.jpg",
               "difficulty": 8,
                 "reps": "6-8"
           },
@@ -178,7 +178,7 @@
               "name": "Seated Cable Row",
               "description": "The seated cable row is a compound exercise that targets the back muscles, including the latissimus dorsi and rhomboids.",
               "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius", "Long head Biceps"],
-              "img": "/img/workoutImages/seatedcablerow.jpg",
+              "img": "img/workoutImages/seatedcablerow.jpg",
               "difficulty": 5,
               "reps": "10-15"
           },
@@ -186,7 +186,7 @@
               "name": "Dumbbell Pullover",
               "description": "The dumbbell pullover is an isolation exercise that primarily targets the latissimus dorsi and chest muscles.",
               "muscles_targeted": ["Latissimus dorsi", "Pectoralis major upper", "Long head Triceps"],
-              "img": "/img/workoutImages/dumbellpullover.jpg",
+              "img": "img/workoutImages/dumbellpullover.jpg",
               "difficulty": 4,
               "reps": "10-15"
           },
@@ -194,7 +194,7 @@
               "name": "Bent-Over Row",
               "description": "The bent-over row is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
               "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius", "Long head Biceps"],
-              "img": "/img/workoutImages/bentrow.jpg",
+              "img": "img/workoutImages/bentrow.jpg",
               "difficulty": 6,
               "reps": "6-9"
           }
@@ -204,7 +204,7 @@
             "name": "Dumbbell Row",
             "description": "The dumbbell row is an isolation exercise that primarily targets the latissimus dorsi and rhomboids.",
             "muscles_targeted": ["Latissimus dorsi", "Rhomboids"],
-            "img": "/img/workoutIMages/dumbellrow.jpg",
+            "img": "img/workoutIMages/dumbellrow.jpg",
             "difficulty": 4,
             "reps": "8-10"
         },
@@ -212,126 +212,126 @@
             "name": "Reverse Flyes",
             "description": "Reverse flyes target the rear deltoids and upper back muscles.",
             "muscles_targeted": ["Rotator cuff posterior deltoid", "Upper back"],
-            "img": "/img/workoutImages/reverseflyes.jpg",
+            "img": "img/workoutImages/reverseflyes.jpg",
             "difficulty": 3
         },
         {
             "name": "Hyperextensions",
             "description": "Hyperextensions work the lower back, glutes, and hamstrings.",
             "muscles_targeted": ["Lower back", "Glutes", "Hamstrings"],
-            "img": "/img/workoutImages/hyperextend.jpg",
+            "img": "img/workoutImages/hyperextend.jpg",
             "difficulty": 5
         },
         {
             "name": "Straight Arm Pulldown",
             "description": "The straight arm pulldown is an isolation exercise that targets the latissimus dorsi and rear deltoids.",
             "muscles_targeted": ["Latissimus dorsi", "Rotator cuff posterior deltoid"],
-            "img": "/img/workoutImages/tricepropepush.jpg",
+            "img": "img/workoutImages/tricepropepush.jpg",
             "difficulty": 4
         },
         {
             "name": "Single-Arm Dumbbell Row",
             "description": "The single-arm dumbbell row is an isolation exercise that targets the latissimus dorsi and upper back muscles.",
             "muscles_targeted": ["Latissimus dorsi", "Upper back"],
-            "img": "/img/workoutIMages/singlearmdumbellrow.jpg",
+            "img": "img/workoutIMages/singlearmdumbellrow.jpg",
             "difficulty": 5
         },
         {
           "name": "Machine Row",
           "description": "The machine row is an isolation exercise that targets the back muscles, including the latissimus dorsi and rhomboids.",
           "muscles_targeted": ["Latissimus dorsi", "Rhomboids"],
-          "img": "/img/workoutImages/machinerow.jpg",
+          "img": "img/workoutImages/machinerow.jpg",
           "difficulty": 3
         },
         {
             "name": "Pull-Over Machine",
             "description": "The pull-over machine is an isolation exercise that primarily targets the latissimus dorsi and chest muscles.",
             "muscles_targeted": ["Latissimus dorsi", "Pectoralis major"],
-            "img": "/img/workoutImages/dumbellpullover.jpg",
+            "img": "img/workoutImages/dumbellpullover.jpg",
             "difficulty": 4
         },
         {
             "name": "Inverted Row",
             "description": "The inverted row is a bodyweight exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
-            "img": "/img/workoutImages/invertedrow.jpg",
+            "img": "img/workoutImages/invertedrow.jpg",
             "difficulty": 3
         },
         {
             "name": "Face Pull",
             "description": "Face pulls target the rear deltoids, traps, and rotator cuff muscles.",
             "muscles_targeted": ["Rotator cuff posterior deltoid", "Trapezius", "Rotator cuff"],
-            "img": "/img/workoutImages/facepull.jpg",
+            "img": "img/workoutImages/facepull.jpg",
             "difficulty": 4
         },
         {
             "name": "Chest Supported Row",
             "description": "The chest supported row is an isolation exercise that targets the upper back muscles, including the rhomboids and rear deltoids.",
             "muscles_targeted": ["Upper back", "Rhomboids", "Rotator cuff posterior deltoid"],
-            "img": "/img/workoutImages/chestrow.jpg",
+            "img": "img/workoutImages/chestrow.jpg",
             "difficulty": 3
         },
         {
             "name": "Smith Machine Bent-Over Row",
             "description": "The Smith machine bent-over row is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
-            "img": "/img/workoutImages/smithbentrow.jpg",
+            "img": "img/workoutImages/smithbentrow.jpg",
             "difficulty": 5
         },
         {
             "name": "Cable Row",
             "description": "The cable row is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
-            "img": "/img/workoutImages/seatedcablerow.jpg",
+            "img": "img/workoutImages/seatedcablerow.jpg",
             "difficulty": 6
         },
         {
             "name": "One-Arm Lat Pulldown",
             "description": "The one-arm lat pulldown is an isolation exercise that targets the latissimus dorsi muscle.",
             "muscles_targeted": ["Latissimus dorsi"],
-            "img": "/img/workoutImages/latpulldown.jpg",
+            "img": "img/workoutImages/latpulldown.jpg",
             "difficulty": 4
         },
         {
             "name": "Close-Grip Pulldown",
             "description": "The close-grip pulldown is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
-            "img": "/img/workoutImages/closegrippull",
+            "img": "img/workoutImages/closegrippull",
             "difficulty": 6
         },
         {
             "name": "Chest Supported T-Bar Row",
             "description": "The chest supported T-bar row is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
-            "img": "/img/workoutImages/t-bar.jpg",
+            "img": "img/workoutImages/t-bar.jpg",
             "difficulty": 7
         },
         {
             "name": "Single-Arm Smith Machine Row",
             "description": "The single-arm Smith machine row is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
-            "img": "/img/workoutImages/smithbentrow.jpg",
+            "img": "img/workoutImages/smithbentrow.jpg",
             "difficulty": 6
         },
         {
             "name": "Cable Face Pull",
             "description": "The cable face pull is an isolation exercise that targets the rear deltoids, traps, and rotator cuff muscles.",
             "muscles_targeted": ["Rotator cuff posterior deltoid", "Trapezius", "Rotator cuff"],
-            "img": "/img/workoutImages/facepull.jpg",
+            "img": "img/workoutImages/facepull.jpg",
             "difficulty": 4
         },
         {
             "name": "Machine Assisted Pull-Up",
             "description": "The machine assisted pull-up is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
-            "img": "/img/workoutImages/machineassistedpullup.jpg",
+            "img": "img/workoutImages/machineassistedpullup.jpg",
             "difficulty": 5
         },
         {
             "name": "Cable Bent-Over Row",
             "description": "The cable bent-over row is an isolation exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
-            "img": "/img/workoutImages/bentcablerow.jpg",
+            "img": "img/workoutImages/bentcablerow.jpg",
             "difficulty": 6
         }
       ]
@@ -347,7 +347,7 @@
               "name": "Barbell Bicep Curl",
               "description": "The barbell bicep curl is a compound exercise that targets the biceps.",
               "muscles_targeted": ["Biceps"],
-              "img": "/img/workoutImages/barbellcurl.jpg",
+              "img": "img/workoutImages/barbellcurl.jpg",
               "difficulty": 5
           },
           {
@@ -361,21 +361,21 @@
               "name": "Hammer Curl",
               "description": "Hammer curls are a compound exercise that target the biceps and brachialis.",
               "muscles_targeted": ["Biceps", "Brachialis"],
-              "img": "/img/workoutImages/hammercurl.jpg",
+              "img": "img/workoutImages/hammercurl.jpg",
               "difficulty": 4
           },
           {
               "name": "Preacher Curl",
               "description": "The preacher curl is a compound exercise that isolates the biceps.",
               "muscles_targeted": ["Biceps"],
-              "img": "/img/workoutImages/preachercurl.jpg",
+              "img": "img/workoutImages/preachercurl.jpg",
               "difficulty": 5
           },
           {
               "name": "Incline Dumbbell Curl",
               "description": "The incline dumbbell curl is a compound exercise that targets the biceps and brachialis.",
               "muscles_targeted": ["Biceps", "Brachialis"],
-              "img": "/img/workoutImages/inclinedumbbellcurl.jpg",
+              "img": "img/workoutImages/inclinedumbbellcurl.jpg",
               "difficulty": 4
           }
       ],
@@ -384,35 +384,35 @@
               "name": "Dumbbell Bicep Curl",
               "description": "The dumbbell bicep curl is an isolation exercise that targets the biceps.",
               "muscles_targeted": ["Biceps"],
-              "img": "/img/workoutImages/dumbbellbicepcurl.jpg",
+              "img": "img/workoutImages/dumbbellbicepcurl.jpg",
               "difficulty": 2
           },
           {
               "name": "Concentration Curl",
               "description": "The concentration curl is an isolation exercise that targets the biceps.",
               "muscles_targeted": ["Biceps"],
-              "img": "/img/workoutImages/concentratecurl.jpg",
+              "img": "img/workoutImages/concentratecurl.jpg",
               "difficulty": 3
           },
           {
               "name": "Cable Bicep Curl",
               "description": "The cable bicep curl is an isolation exercise that targets the biceps.",
               "muscles_targeted": ["Biceps"],
-              "img": "/img/workoutImages/cablebicepcurl.jpg",
+              "img": "img/workoutImages/cablebicepcurl.jpg",
               "difficulty": 3
           },
           {
               "name": "Spider Curl",
               "description": "The spider curl is an isolation exercise that targets the biceps.",
               "muscles_targeted": ["Biceps"],
-              "img": "/img/workoutImages/spidercurl.jpg",
+              "img": "img/workoutImages/spidercurl.jpg",
               "difficulty": 3
           },
           {
               "name": "Machine Bicep Curl",
               "description": "The machine bicep curl is an isolation exercise that targets the biceps.",
               "muscles_targeted": ["Biceps"],
-              "img": "/img/workoutImages/machinebicepcurl.jpg",
+              "img": "img/workoutImages/machinebicepcurl.jpg",
               "difficulty": 2
           }
       ]
