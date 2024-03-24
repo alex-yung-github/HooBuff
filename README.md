@@ -34,15 +34,14 @@ To use the Workout Selector website, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Install the necessary dependencies.
-3. Run the application locally through
+3. Deploy on another application or run the application locally through
   ```
   node server.js
   ```
-  or
   ```
   npm start
   ```
-   or deploy it through another application.
+
 5. Access the website through localhost:3000 or another url if you modify it.
 6. Input your preferences and generate your personalized workout routine.
 7. Follow the generated workout routine to achieve your fitness goals!
