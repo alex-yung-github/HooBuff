@@ -16,89 +16,111 @@
         .workout-col {
             margin-bottom: 20px;
         }
-        .hero {
-            position: relative;
-            overflow: hidden;
+        body {
+            background-image: url("img/landingbackground.jpg"); /* Add the path to your image */
+            background-size: cover;
+            background-position: center;
         }
-        #hero-img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8); /* Set the background color with transparency */
         }
-        .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
+        .card {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: lightyellow; /* Add background color to the card */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+            transition: box-shadow 0.3s ease-in-out; /* Add transition effect */
+        }
+        .card:hover {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+        }
+        .card img {
+            width: 100%; /* Make the image width 100% of its container */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .muscleCard{
+            background-color: lightblue;
+        }
+        .nav-item {
+            margin-left: 2rem;
+        }
+        .title{
             color: white;
         }
     </style>
-    </style>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@<version>/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@<version>/examples/jsm/"
+          }
+        }
+      </script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-background" id="navbar">
-        <div class="container p-1">
-            <a class="navbar-brand" href="/" style="font-weight: 700">HooBuff</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle Navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Exercise Info</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section class="hero">
-        <img
-          src="img\landingbackground.jpg"
-          alt="Hero "
-          class="fade-in-top-img"
-          id="hero-img"
-        />
-        <div
-          class="container text-dark"
-          id="hero-container"
-          style="
-            padding-left: 5em;
-            padding-right: 5em;
-            padding-bottom: 5em;
-            padding-top: 8em;
-          "
+     <!-- Nav Bar -->
+     <nav
+      class="navbar navbar-expand-lg fixed-top navbar-dark navbar-background"
+      id="navbar"
+    >
+      <div class="container p-1">
+        <a class="navbar-brand" href="/" style="font-weight: 700">HooBuff</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
         >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/workoutform" class="nav-link">Create Workout</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Exercise Info</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</br>
+</br>
     <div class="container mt-3">
-        <h1 class="mt-5 mb-4 text-center">Workouts and Videos</h1>
+        <h1 class="mt-5 mb-4 text-center text-white">Your Workout</h1>
         <div class="row workout-row">
             <% for (let i = 0; i < workoutPlan.length; i+=2) { %>
             <div class="col-md-6 workout-col">
-                <div class="card container mb-4"> <!-- Added mb-4 class for margin bottom -->
-                    <h2 class="text-primary"><%= workoutPlan[i].name %></h2>
-                    <div class="recipe-video embed-responsive embed-responsive-16by9">
-                        <iframe
-                            class="embed-responsive-item"
-                            src="<%= workoutPlan[i].youtube_link %>"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
+                <div class="card container mb-4 p-4"> <!-- Added padding -->
+                    <h2 class="text-dark"><%= workoutPlan[i].name %></h2>
+                    <img class="embed-responsive-item" src="<%= workoutPlan[i].img %>"></img>
                     <div>
                         <div class="card-body">
-                            <h3 class="text-success">Workout Description</h3>
+                            <h3 class="text-dark">Exercise Description</h3>
                             <p><%= workoutPlan[i].description %></p>
-                            <h3 class="text-success">Difficulty</h3>
-                            <p>Difficulty: <%= workoutPlan[i].difficulty %></p>
-                            <h3 class="text-success"> Muscles Targeted</h3>
-                            <%= for(let k = 0; k < workoutPlan[i].muscles_targeted.length; k++) { %>
-                            <li> <%= workoutPlan[i].muscles_targeted[k] %><li>
+                            <h3 class="text-danger">Difficulty</h3>
+                            <p>On a scale of 10, the difficulty is <%= workoutPlan[i].difficulty %></p>
+                            <h3 class="text-warning"> Muscles Targeted</h3>
+                        </br>
+                            <div class="row">
+                                <% for(let k = 0; k < workoutPlan[i].muscles_targeted.length; k++) { %>
+                                    <div class="col-sm-4">
+                                        <div class="card text-dark muscleCard mb-3">
+                                            <div class="card-body">
+                                                <p class="card-text fs-6 text-center"><%= workoutPlan[i].muscles_targeted[k] %></p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 <% } %>
+                            </div>
 
                         </div>
                     </div>
@@ -106,26 +128,28 @@
             </div>
             <% if (i+1 < workoutPlan.length) { %>
             <div class="col-md-6 workout-col">
-                <div class="card container mb-4"> <!-- Added mb-4 class for margin bottom -->
-                    <h2 class="text-primary"><%= workoutPlan[i+1].name %></h2>
-                    <div class="recipe-video embed-responsive embed-responsive-16by9">
-                        <iframe
-                            class="embed-responsive-item"
-                            src="<%= workoutPlan[i+1].youtube_link %>"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
+                <div class="card container mb-4 p-4"> <!-- Added padding -->
+                    <h2 class="text-dark"><%= workoutPlan[i+1].name %></h2>
+                    <img class="embed-responsive-item" src="<%= workoutPlan[i+1].img %>"></img>
                     <div>
                         <div class="card-body">
-                            <h3 class="text-success">Workout Description</h3>
+                            <h3 class="text-dark">Exercise Description</h3>
                             <p><%= workoutPlan[i+1].description %></p>
-                            <h3 class="text-info">Difficulty</h3>
-                            <p>Difficulty: <%= workoutPlan[i+1].difficulty %></p>
-                            <h3 class="text-success"> Muscles Targeted</h3>
-                            <%= for(let k = 0; k < workoutPlan[i+1].muscles_targeted.length; k++) { %>
-                                <li> <%= workoutPlan[i+1].muscles_targeted[k] %><li>
-                                    <% } %>
-    
+                            <h3 class="text-danger">Difficulty</h3>
+                            <p>On a scale of 10, the difficulty is <%= workoutPlan[i+1].difficulty %></p>
+                            <h3 class="text-warning"> Muscles Targeted</h3>
+                            </br>
+                            <div class="row">
+                                <% for(let k = 0; k < workoutPlan[i+1].muscles_targeted.length; k++) { %>
+                                    <div class="col-sm-4">
+                                        <div class="card text-dark mb-3 muscleCard">
+                                            <div class="card-body">
+                                                <p class="card-text fs-6 text-center"><%= workoutPlan[i+1].muscles_targeted[k] %></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <% } %>
+                            </div>
                         </div>  
                     </div>
                 </div>

@@ -16,27 +16,34 @@ const workoutCategory = [
 	{ name: "Weights", value: "weights" }
 ]
 
+// Muscle Group
+const muscleGroup = [
+	{ name: "Back", value: "back" }, 
+	{ name: "Chest", value: "chest" },
+	{ name: "Shoulder", value: "shoulders" }, 
+	{ name: "Legs", value: "legs" }, 
+	{ name: "Bicep", value: "biceps" }, 
+	{ name: "Tricep", value: "triceps" }, 
+	{ name: "Abs", value: "abs" }, 
+]
+
 // Get Request to Home Page
 app.get('/', (req,res) =>{
 	res.render("index.ejs", { workoutCategory })
 })
 
+// Post and Get Request to Workout Form Page
 app.post('/workoutform', (req,res) => {
 	const category = req.body.category;
-
-	const muscleGroup = [
-		{ name: "Back", value: "back" }, 
-		{ name: "Chest", value: "chest" },
-		{ name: "Shoulder", value: "shoulders" }, 
-		{ name: "Legs", value: "legs" }, 
-		{ name: "Bicep", value: "biceps" }, 
-		{ name: "Tricep", value: "triceps" }, 
-		{ name: "Abs", value: "abs" }, 
-	]
 
 	res.render("formPage/workoutForm.ejs", { workoutCategory, muscleGroup, category })
 })
 
+app.get('/workoutform', (req, res) => {
+	res.render("formPage/workoutForm.ejs", { workoutCategory, muscleGroup, category: null })
+});
+
+// Post Request to Loading Page
 app.post('/loading', async (req,res) =>{
 	const workoutType = req.body.btnradio; // Retrieves the value of the selected radio button
 	console.log("pt 1: ", req.body)
@@ -48,5 +55,10 @@ app.post('/loading', async (req,res) =>{
 
 	// Await until clothing sort algorithm completes running. Render display page after. 
 })
+
+// Get Request to Search Page
+app.get('/search', (req, res) => {
+	res.render("formPage/search.ejs")
+});
 
 module.exports = app

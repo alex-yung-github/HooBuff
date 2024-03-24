@@ -38,12 +38,17 @@ def calculate_average_difficulty(exercises):
 
 # Function to select random exercises based on muscle group and difficulty level
 def select_exercises(exercises, num_exercises, target_difficulty, expanded_muscle_groups):
-    filtered_exercises = [exercise for exercise in exercises if abs(exercise["difficulty"] - target_difficulty) <= 2]  # Adjust the tolerance level as needed
     
     toReturn = []
     maxScore = -1
-    for i in range(5):
-        selected_exercises = random.sample(filtered_exercises, min(num_exercises, len(filtered_exercises)))
+    while(maxScore < (min(len(exercises), num_exercises)-1) * 4):
+        selected_exercises = random.sample(exercises, min(num_exercises, len(exercises)))
+        avg_difficulty = 0
+        for ex in selected_exercises:
+            avg_difficulty += ex["difficulty"]
+        avg_difficulty = avg_difficulty/(len(selected_exercises) + 1.0 - 1.0)
+        if(abs(target_difficulty - avg_difficulty) > 2):
+            continue
         already_targeted = []
         score = 0
         for s in selected_exercises:
@@ -55,7 +60,7 @@ def select_exercises(exercises, num_exercises, target_difficulty, expanded_muscl
                         score += 5
                         already_targeted.append(m)
                     else:
-                        score += 1
+                        score += 2
         if(score > maxScore):
             maxScore = score
             toReturn = selected_exercises     
@@ -90,10 +95,10 @@ def generate_workout(json_file_path, given_time, target_difficulty, muscle_group
     specific_muscles = expand_muscle_groups(muscle_groups_desired)
 
     # Randomly select compound and isolation exercises based on difficulty level
-    selected_compound_exercises = select_exercises(compound_exercises, num_compound_exercises, average_difficulty, specific_muscles)
+    selected_compound_exercises = select_exercises(compound_exercises, num_compound_exercises, target_difficulty, specific_muscles)
     for i in selected_compound_exercises:
         i["sets"] = 4
-    selected_isolation_exercises = select_exercises(isolation_exercises, num_isolation_exercises, average_difficulty, specific_muscles)
+    selected_isolation_exercises = select_exercises(isolation_exercises, num_isolation_exercises, target_difficulty, specific_muscles)
     for i in selected_isolation_exercises:
         i["sets"] = 3
     # Combine selected exercises

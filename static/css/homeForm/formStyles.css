@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: black;
     height: 100%;
 }
 
@@ -7,13 +7,26 @@ h1 {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1em;
+    color: white;
 }
 
 p {
+    color: white;
 }
 
 /* Nav Bar */
 .navbar-background {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.2s ease;    /* Transitions smoothly over 0.25 seconds */
+}
+
+@media (max-width: 991px) {
+    .navbar-background {
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+
+.navbar-background.scrolled {
     background-color: rgba(0, 0, 0, 1);
 }
 
@@ -66,6 +79,7 @@ section.hero img {
     flex-wrap: wrap;
     gap: 6em;
     justify-content: center;
+    margin-bottom: 1em;
 }
 
 .question {
@@ -78,7 +92,8 @@ section.hero img {
 
 .submit-button {
     display: block; 
-    width: 8em; 
+    width: 10em; 
+    padding: 0.6em 0em;
     margin: auto;
 }
 
@@ -101,10 +116,9 @@ label p {
 
 .category-button {
     display: block; 
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: .75em 0em;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     background-color: white;
     border-radius: 10px;
     text-align: center;
@@ -124,7 +138,7 @@ label p {
 
 .muscle-button {
     width: 100%;
-    font-weight: 500;
+    font-weight: 600;
     background-color: white;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -135,12 +149,12 @@ label p {
 
 /* CSS for label that is next to a radio input that is checked */
 input[type="radio"]:checked + label {
-    background-color: lightblue;
-    box-shadow: 0px 0px 15px rgb(63, 63, 63);
+    background-color: rgb(125, 176, 193);
+    box-shadow: 0px 0px 15px rgb(211, 211, 211);
 }
 
 /* CSS for label that is next to a radio input that is checked */
 input[type="checkbox"]:checked + label {
     background-color: lightblue;
-    box-shadow: 0px 0px 10px rgb(63, 63, 63);
+    box-shadow: 0px 0px 12px rgb(211, 211, 211);
 }

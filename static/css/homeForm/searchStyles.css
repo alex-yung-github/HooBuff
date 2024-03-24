@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+    height: 100%;
+}
+
+/* Nav Bar */
+.navbar-background {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.2s ease;    /* Transitions smoothly over 0.25 seconds */
+}
+
+@media (max-width: 991px) {
+    .navbar-background {
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+
+.navbar-background.scrolled {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.nav-item {
+    margin-left: 2rem;
+}

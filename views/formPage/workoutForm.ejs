@@ -53,7 +53,7 @@
               <a href="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">About Us</a>
+              <a href="/workoutform" class="nav-link active">Create Workout</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Exercise Info</a>
@@ -92,6 +92,7 @@
               name="btnradio"
               id="<%= workoutCategory[0].value %>"
               class="btn-check"
+              required
             />
             <label for="<%= workoutCategory[0].value %>" class="category-button"
               ><%= workoutCategory[0].name %></label
@@ -140,8 +141,8 @@
                 name="experience"
                 id="experience"
                 min="1"
-                max="10"
-                placeholder="Enter 1 through 10"
+                max="8"
+                placeholder="Enter 1 through 8"
                 required
               />
             </div>
@@ -168,7 +169,7 @@
               </select>
             </div>
           </div>
-          <button class="btn btn-success submit-button mb-2" type="submit">
+          <button class="btn btn-success submit-button mb-3" type="submit">
             Submit
           </button>
         </form>
@@ -182,35 +183,9 @@
         radio.checked = false;
       });
 
-      document.getElementById("<%= category %>").checked = true;
-
-      // // Changing color of category button when clicked
-      // document.querySelectorAll('input[type="radio"]').forEach((radio) => {
-      //   // Initial setup
-      //   if (radio.checked) {
-      //     document
-      //       .querySelector('label[for="' + this.id + '"]')
-      //       .classList.add("button-cicked");
-      //     l;
-      //   } else {
-      //     document
-      //       .querySelector('label[for="' + this.id + '"]')
-      //       .classList.remove("button-clicked");
-      //   }
-
-      //   radio.addEventListener("change", function () {
-      //     if (this.checked) {
-      //       document
-      //         .querySelector('label[for="' + this.id + '"]')
-      //         .classList.add("button-cicked");
-      //       l;
-      //     } else {
-      //       document
-      //         .querySelector('label[for="' + this.id + '"]')
-      //         .classList.remove("button-clicked");
-      //     }
-      //   });
-      // });
+      if ("<%= category %>" !== "") {
+        document.getElementById("<%= category %>").checked = true;
+      }
     </script>
   </body>
 </html>

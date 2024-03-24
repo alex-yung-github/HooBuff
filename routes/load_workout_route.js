@@ -44,6 +44,7 @@ app.post('/generate-workout', (req, res) => {
     pythonProcess.stdout.on('data', (data) => {
         // Process the data and send to EJS template
         const workoutPlan = JSON.parse(data);
+        console.log(result)
         res.render('landing/landing', { workoutPlan });
     });
 
