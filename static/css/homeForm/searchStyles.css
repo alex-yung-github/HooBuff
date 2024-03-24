@@ -119,3 +119,8 @@ section.hero img {
     border-bottom: none;
     margin-bottom: 0em;
 }
+
+.exercise-info {
+    display: flex;
+    justify-content: center;
+}
