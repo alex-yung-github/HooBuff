@@ -16,6 +16,17 @@ const workoutCategory = [
 	{ name: "Weights", value: "weights" }
 ]
 
+// Muscle Group
+const muscleGroup = [
+	{ name: "Back", value: "back" }, 
+	{ name: "Chest", value: "chest" },
+	{ name: "Shoulder", value: "shoulders" }, 
+	{ name: "Legs", value: "legs" }, 
+	{ name: "Bicep", value: "biceps" }, 
+	{ name: "Tricep", value: "triceps" }, 
+	{ name: "Abs", value: "abs" }, 
+]
+
 // Get Request to Home Page
 app.get('/', (req,res) =>{
 	res.render("index.ejs", { workoutCategory })
@@ -24,18 +35,12 @@ app.get('/', (req,res) =>{
 app.post('/workoutform', (req,res) => {
 	const category = req.body.category;
 
-	const muscleGroup = [
-		{ name: "Back", value: "back" }, 
-		{ name: "Chest", value: "chest" },
-		{ name: "Shoulder", value: "shoulder" }, 
-		{ name: "Legs", value: "legs" }, 
-		{ name: "Bicep", value: "biceps" }, 
-		{ name: "Tricep", value: "triceps" }, 
-		{ name: "Abs", value: "abs" }, 
-	]
-
 	res.render("formPage/workoutForm.ejs", { workoutCategory, muscleGroup, category })
 })
+
+app.get('/workoutform', (req, res) => {
+	res.render("formPage/workoutForm.ejs", { workoutCategory, muscleGroup, category: null })
+});
 
 app.post('/loading', async (req,res) =>{
 	const workoutType = req.body.btnradio; // Retrieves the value of the selected radio button
