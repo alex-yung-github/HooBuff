@@ -188,16 +188,38 @@
         const exerciseInfo = document.getElementById('exercise-info');
         const searchBtn = document.getElementById("search-btn");
         searchBtn.addEventListener('click', () => {
-          // TO-DO: Implement Code - use searchbar.value which represents exercise name
           exercisesArr.forEach(exercise => {
             if (exercise.name.toLowerCase() === searchbar.value.toLowerCase()) {
               // Implement Display Exercise
-              /*
-              Achieving EJS like format:
-               - exerciseInfo.innerHTML = / * HTML * /
-               - ${exercise.name} instead of < %= exercise.name % >
-              */
-              console.log(exercise.description);
+              exerciseInfo.innerHTML = '';    // clear previous inner HTML
+
+              let muscleHTML = "";
+              for (let k = 0; k < exercise.muscles_targeted.length; k++) {
+                muscleHTML +=
+                  `<div class="col-sm-4">
+                      <div class="card text-dark muscleCard mb-3">
+                          <div class="card-body">
+                              <p class="card-text fs-6 text-center">${exercise.muscles_targeted[k]}</p>
+                          </div>
+                      </div>
+                  </div>`;
+              }
+
+              exerciseInfo.innerHTML =
+              `<div class="card container card-container">
+                <div class="card-body">
+                  <h2 class="text-dark">${exercise.name}</h2>
+                  <h3 class="text-dark">Exercise Description</h3>
+                  <p>${exercise.description}</p>
+                  <h3 class="text-danger">Difficulty</h3>
+                  <p>On a scale of 10, the difficulty is ${exercise.difficulty}</p>
+                  <h3 class="text-warning"> Muscles Targeted</h3>
+                <br />
+                  <div class="row">
+                      ${muscleHTML}
+                  </div>
+                </div>
+              </div>`;
             }
           });
         });

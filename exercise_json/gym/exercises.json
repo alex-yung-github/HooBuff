@@ -29,7 +29,7 @@
               "name": "Skull Crushers",
               "description": "Skull crushers are an isolation exercise that target the triceps.",
               "muscles_targeted": ["Long head", "Lateral head"],
-              "img": ".img/workoutImages/skull_crushers.jpg",
+              "img": "img/workoutImages/skull_crushers.jpg",
               "difficulty": 5,
               "reps": "8-12"
           },
