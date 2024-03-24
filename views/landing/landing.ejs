@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cooking Demo</title>
+        <title>Your Exercises</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
@@ -53,6 +53,9 @@
             }
             .title{
                 color: white;
+            }
+            h3.newcolor {
+                color: pink;
             }
         </style>
         <script type="importmap">
@@ -122,6 +125,8 @@
                                 <p> <%= workoutPlan[i].sets %> sets and <%= workoutPlan[i].reps %> reps</p>
                                 <h3 class="text-danger">Difficulty</h3>
                                 <p>On a scale of 10, the difficulty is <%= workoutPlan[i].difficulty %></p>
+                                <h3 class="newcolor">Repetitions</h3>
+                                <p>Recommended Repetitions: <%= workoutPlan[i].reps %></p>
                                 <h3 class="text-warning"> Muscles Targeted</h3>
                             </br>
                                 <div class="row">
@@ -152,6 +157,8 @@
                                 <p> <%= workoutPlan[i+1].sets %> sets and <%= workoutPlan[i+1].reps %> reps</p>
                                 <h3 class="text-danger">Difficulty</h3>
                                 <p>On a scale of 10, the difficulty is <%= workoutPlan[i+1].difficulty %></p>
+                                <h3 class="newcolor">Repetitions</h3>
+                                <p>Recommended Repetitions: <%= workoutPlan[i+1].reps %></p>
                                 <h3 class="text-warning"> Muscles Targeted</h3>
                                 </br>
                                 <div class="row">

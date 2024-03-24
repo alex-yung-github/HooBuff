@@ -29,7 +29,7 @@
               "name": "Skull Crushers",
               "description": "Skull crushers are an isolation exercise that target the triceps.",
               "muscles_targeted": ["Long head", "Lateral head"],
-              "img": ".img/workoutImages/skull_crushers.jpg",
+              "img": "img/workoutImages/skull_crushers.jpg",
               "difficulty": 5,
               "reps": "8-12"
           },
@@ -586,7 +586,7 @@
               "name": "Handstand Push-Up",
               "description": "The handstand push-up is a compound exercise that primarily targets the deltoid muscles and triceps.",
               "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral", "Triceps"],
-              "img": "img/wrokoutImages/handstand.jpg",
+              "img": "img/workoutImages/handstand.jpg",
               "difficulty": 8,
               "reps": "15-60 sec"
           }
@@ -714,7 +714,7 @@
               "muscles_targeted": ["Calves"],
               "img": "img/workoutImages/seatedcalfraise.jpg",
               "difficulty": 3,
-              "reps": "",
+              "reps": "8-12",
               "link": "https://www.youtube.com/watch?v=JbyjNymZOt0"
           }
       ]
@@ -731,28 +731,32 @@
               "description": "The bench press is a compound exercise that targets the pectoralis major (upper, middle, and lower), deltoids, and triceps.",
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower", "Deltoids", "Triceps"],
               "img": "img/workoutImages/benchpress.png",
-              "difficulty": 7
+              "difficulty": 7,
+              "reps": "6-10"
           },
           {
               "name": "Push-Ups",
               "description": "Push-ups are a compound exercise that primarily target the pectoralis major (upper, middle, and lower), deltoids, and triceps.",
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower", "Deltoids", "Triceps"],
               "img": "img/workoutImages/pushup.png",
-              "difficulty": 5
+              "difficulty": 5,
+              "reps": "12-15"
           },
           {
               "name": "Incline Bench Press",
               "description": "The incline bench press is a compound exercise that targets the upper portion of the pectoralis major, deltoids, and triceps.",
               "muscles_targeted": ["Pectoralis major upper", "Deltoids", "Triceps"],
               "img": "img/workoutImages/inclinebenchpress.jpg",
-              "difficulty": 6
+              "difficulty": 6,
+              "reps": "8-12"
           },
           {
               "name": "Decline Bench Press",
               "description": "The decline bench press is a compound exercise that targets the lower portion of the pectoralis major, deltoids, and triceps.",
               "muscles_targeted": ["Pectoralis major lower", "Deltoids", "Triceps"],
               "img": "img/workoutImages/declinebenchpress.jpg",
-              "difficulty": 8
+              "difficulty": 8,
+              "reps": "4-6"
           }
       ],
       "isolation": [
@@ -761,35 +765,40 @@
               "description": "Chest flyes are an isolation exercise that primarily target the pectoralis major (upper, middle, and lower).",
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
               "img": "img/workoutImages/chestflyes.jpg",
-              "difficulty": 4
+              "difficulty": 4,
+              "reps": "10-12"
           },
           {
               "name": "Cable Crossover",
               "description": "The cable crossover is an isolation exercise that primarily targets the pectoralis major (upper, middle, and lower).",
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
               "img": "img/workoutImages/cablecrossover.jpg",
-              "difficulty": 5
+              "difficulty": 5,
+              "reps": "10-12"
           },
           {
               "name": "Dumbbell Flyes",
               "description": "Dumbbell flyes are an isolation exercise that primarily target the pectoralis major (upper, middle, and lower).",
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
               "img": "img/workoutImages/chestflyes.jpg",
-              "difficulty": 4
+              "difficulty": 4,
+              "reps": "10-12"
           },
           {
               "name": "Machine Chest Press",
               "description": "The machine chest press is an isolation exercise that primarily targets the pectoralis major (upper, middle, and lower).",
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
               "img": "img/workoutImages/machinechestpress.jpg",
-              "difficulty": 5
+              "difficulty": 5,
+              "reps": "10-12"
           },
           {
               "name": "Pec Deck Machine",
               "description": "The pec deck machine is an isolation exercise that primarily targets the pectoralis major (upper, middle, and lower).",
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
               "img": "img/workoutImages/pecdeckmachine.jpg",
-              "difficulty": 4
+              "difficulty": 4,
+                "reps": "10-12"
           }
       ]
     }
