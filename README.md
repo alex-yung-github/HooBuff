@@ -23,10 +23,10 @@ This project aims to provide users with a convenient tool to generate workout ro
 ## 🖥️ Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Python (Flask)
-- **Algorithm**: Python (Custom algorithm)
-- **Database**: SQLite (or any preferred database)
-- **Deployment**: (Specify deployment platform)
+- **Backend**: Express.js and Node.js
+- **Algorithm**: Python
+- **Database**: MongoDB in the future
+- **Deployment**: Netlify in future improvements
 
 ## ✋ Usage
 
@@ -34,10 +34,14 @@ To use the Workout Selector website, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Install the necessary dependencies.
-3. Run the application locally through node.js or deploy it through another application.
-4. Access the website through localhost:3000 or another url if you modify it.
-5. Input your preferences and generate your personalized workout routine.
-6. Follow the generated workout routine to achieve your fitness goals!
+3. Deploy on another application or run the application locally through
+  ```
+  npm start
+  ```
+
+5. Access the website through localhost:3000 or another url if you modify it.
+6. Input your preferences and generate your personalized workout routine.
+7. Follow the generated workout routine to achieve your fitness goals!
 
 ## 🤝 Contributing
 
