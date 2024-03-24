@@ -57,7 +57,7 @@ app.get('/error', (req, res) => {
     res.render('testing/error');
 });
 
-app.get('/information', (req, res) =>{
+app.get('/about', (req, res) =>{
     res.render('landing/information')
 })
 
