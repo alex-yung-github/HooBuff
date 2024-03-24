@@ -33,18 +33,14 @@ app.post('/generate-workout', (req, res) => {
         JSON.stringify(muscle_groups), // Convert exercisesList to JSON string
     ]);
   
-    let result = '';
-  
-    // Collect output from the Python script
-    pythonProcess.stdout.on('data', (data) => {
-        result += data.toString();
-    });
-  
     // Handle data from Python script
     pythonProcess.stdout.on('data', (data) => {
         // Process the data and send to EJS template
         const workoutPlan = JSON.parse(data);
-        console.log(result)
+        workoutPlan.forEach(exercise => {
+            exercise.img = exercise.img.replace("/img", "img")
+          });
+          console.log("pt 3", workoutPlan)
         res.render('landing/landing', { workoutPlan });
     });
 
@@ -64,7 +60,7 @@ app.get('/error', (req, res) => {
 // Function to get JSON file path based on muscle group
 function getJsonFilePath(workoutType) {
     // Example logic to determine JSON file path based on muscle group
-    if(workoutType && workoutType.toLowerCase() == "gym"){
+    if(workoutType && workoutType.toLowerCase() == "on"){
         return "exercise_json/gym/exercises.json";
     } else{
         return "exercise_json/calisthenics/exercises.json"
