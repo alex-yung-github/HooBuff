@@ -34,6 +34,36 @@
        }
      }
    </script>
+   <style>
+    img.background  {
+      width: 100%;
+      height: auto;
+      
+    }
+    .hero-container {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.5;
+    }
+    .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Text color */
+    }
+    body {
+    background-color: black;
+    }
+
+   </style>
 </head>
 
 <body>
@@ -72,8 +102,25 @@
         </div>
       </div>
     </nav>
+    <section class="hero">
+      <img class="background hero-image"
+        src="img/aboutus.jpg"
+        alt="Hero Image"
+        class="fade-in-top-img"
+        id="hero-img"
+      />
+      <div
+        class="container text-dark"
+        id="hero-container"
+        style="
+          padding-left: 5em;
+          padding-right: 5em;
+          padding-bottom: 5em;
+          padding-top: 8em;
+        "
+      >
 
-    <div class="container">
+    <div class="container mt-3 hero-container hero-text">
         <header>
             <h1>About Us - Our Website</h1>
         </header>
