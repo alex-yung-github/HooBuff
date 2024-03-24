@@ -36,9 +36,6 @@ To use the Workout Selector website, follow these steps:
 2. Install the necessary dependencies.
 3. Deploy on another application or run the application locally through
   ```
-  node server.js
-  ```
-  ```
   npm start
   ```
 
