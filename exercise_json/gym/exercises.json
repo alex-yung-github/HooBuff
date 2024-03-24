@@ -615,7 +615,7 @@
               "name": "Military Press",
               "description": "The military press is a compound exercise that primarily targets the deltoid muscles.",
               "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral"],
-              "img": "img/workoutImages/military press.jpg",
+              "img": "img/workoutImages/militarypress.jpg",
               "difficulty": 6,
               "reps": "5-10",
               "link": "https://www.youtube.com/watch?v=dummyLink"
