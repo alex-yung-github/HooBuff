@@ -39,6 +39,9 @@
             width: 100%; /* Make the image width 100% of its container */
             height: auto; /* Maintain aspect ratio */
         }
+        .muscleCard{
+            background-color: lightblue;
+        }
     </style>
     </style>
 </head>
@@ -88,7 +91,7 @@
                             <div class="row">
                                 <% for(let k = 0; k < workoutPlan[i].muscles_targeted.length; k++) { %>
                                     <div class="col-sm-4">
-                                        <div class="card text-dark bg-info mb-3">
+                                        <div class="card text-dark muscleCard mb-3">
                                             <div class="card-body">
                                                 <p class="card-text fs-6 text-center"><%= workoutPlan[i].muscles_targeted[k] %></p>
                                             </div>
@@ -117,7 +120,7 @@
                             <div class="row">
                                 <% for(let k = 0; k < workoutPlan[i+1].muscles_targeted.length; k++) { %>
                                     <div class="col-sm-4">
-                                        <div class="card text-dark bg-info mb-3">
+                                        <div class="card text-dark mb-3 muscleCard">
                                             <div class="card-body">
                                                 <p class="card-text fs-6 text-center"><%= workoutPlan[i+1].muscles_targeted[k] %></p>
                                             </div>
