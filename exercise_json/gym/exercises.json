@@ -213,126 +213,144 @@
             "description": "Reverse flyes target the rear deltoids and upper back muscles.",
             "muscles_targeted": ["Rotator cuff posterior deltoid", "Upper back"],
             "img": "img/workoutImages/reverseflyes.jpg",
-            "difficulty": 3
+            "difficulty": 3,
+            "reps": "12-15"
         },
         {
             "name": "Hyperextensions",
             "description": "Hyperextensions work the lower back, glutes, and hamstrings.",
             "muscles_targeted": ["Lower back", "Glutes", "Hamstrings"],
             "img": "img/workoutImages/hyperextend.jpg",
-            "difficulty": 5
+            "difficulty": 5,
+            "reps": "10-15"
         },
         {
             "name": "Straight Arm Pulldown",
             "description": "The straight arm pulldown is an isolation exercise that targets the latissimus dorsi and rear deltoids.",
             "muscles_targeted": ["Latissimus dorsi", "Rotator cuff posterior deltoid"],
             "img": "img/workoutImages/tricepropepush.jpg",
-            "difficulty": 4
+            "difficulty": 4,
+            "reps": "10-15"
         },
         {
             "name": "Single-Arm Dumbbell Row",
             "description": "The single-arm dumbbell row is an isolation exercise that targets the latissimus dorsi and upper back muscles.",
             "muscles_targeted": ["Latissimus dorsi", "Upper back"],
-            "img": "img/workoutIMages/singlearmdumbellrow.jpg",
-            "difficulty": 5
+            "img": "img/workoutImages/dumbellrow.jpg",
+            "difficulty": 5,
+            "reps": "10-15" 
         },
         {
           "name": "Machine Row",
           "description": "The machine row is an isolation exercise that targets the back muscles, including the latissimus dorsi and rhomboids.",
           "muscles_targeted": ["Latissimus dorsi", "Rhomboids"],
           "img": "img/workoutImages/machinerow.jpg",
-          "difficulty": 3
+          "difficulty": 3,
+          "reps": "12-15"
         },
         {
             "name": "Pull-Over Machine",
             "description": "The pull-over machine is an isolation exercise that primarily targets the latissimus dorsi and chest muscles.",
             "muscles_targeted": ["Latissimus dorsi", "Pectoralis major"],
             "img": "img/workoutImages/dumbellpullover.jpg",
-            "difficulty": 4
+            "difficulty": 4,
+            "reps": "8-10"
         },
         {
             "name": "Inverted Row",
             "description": "The inverted row is a bodyweight exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/invertedrow.jpg",
-            "difficulty": 3
+            "difficulty": 3,
+            "reps": "8-15"
         },
         {
             "name": "Face Pull",
             "description": "Face pulls target the rear deltoids, traps, and rotator cuff muscles.",
             "muscles_targeted": ["Rotator cuff posterior deltoid", "Trapezius", "Rotator cuff"],
             "img": "img/workoutImages/facepull.jpg",
-            "difficulty": 4
+            "difficulty": 4,
+            "reps": "10-12"
         },
         {
             "name": "Chest Supported Row",
             "description": "The chest supported row is an isolation exercise that targets the upper back muscles, including the rhomboids and rear deltoids.",
             "muscles_targeted": ["Upper back", "Rhomboids", "Rotator cuff posterior deltoid"],
             "img": "img/workoutImages/chestrow.jpg",
-            "difficulty": 3
+            "difficulty": 3,
+            "reps": "8-10"
         },
         {
             "name": "Smith Machine Bent-Over Row",
             "description": "The Smith machine bent-over row is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/smithbentrow.jpg",
-            "difficulty": 5
+            "difficulty": 5,
+            "reps": "8-12"
         },
         {
             "name": "Cable Row",
             "description": "The cable row is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/seatedcablerow.jpg",
-            "difficulty": 6
+            "difficulty": 6,
+            "reps": "10-15"
         },
         {
             "name": "One-Arm Lat Pulldown",
             "description": "The one-arm lat pulldown is an isolation exercise that targets the latissimus dorsi muscle.",
             "muscles_targeted": ["Latissimus dorsi"],
             "img": "img/workoutImages/latpulldown.jpg",
-            "difficulty": 4
+            "difficulty": 4,
+            "reps": "8-12"
         },
         {
             "name": "Close-Grip Pulldown",
             "description": "The close-grip pulldown is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/closegrippull",
-            "difficulty": 6
+            "difficulty": 6,
+            "reps": "8-12"
         },
         {
             "name": "Chest Supported T-Bar Row",
             "description": "The chest supported T-bar row is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/t-bar.jpg",
-            "difficulty": 7
+            "difficulty": 7,
+            "reps": "5-10"
         },
         {
             "name": "Single-Arm Smith Machine Row",
             "description": "The single-arm Smith machine row is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/smithbentrow.jpg",
-            "difficulty": 6
+            "difficulty": 6,
+            "reps": "10-12"
         },
         {
             "name": "Cable Face Pull",
             "description": "The cable face pull is an isolation exercise that targets the rear deltoids, traps, and rotator cuff muscles.",
             "muscles_targeted": ["Rotator cuff posterior deltoid", "Trapezius", "Rotator cuff"],
             "img": "img/workoutImages/facepull.jpg",
-            "difficulty": 4
+            "difficulty": 4,
+            "reps": "10-12"
         },
         {
             "name": "Machine Assisted Pull-Up",
             "description": "The machine assisted pull-up is a compound exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/machineassistedpullup.jpg",
-            "difficulty": 5
+            "difficulty": 5,
+            "reps": "6-8"
         },
         {
             "name": "Cable Bent-Over Row",
             "description": "The cable bent-over row is an isolation exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and traps.",
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/bentcablerow.jpg",
-            "difficulty": 6
+            "difficulty": 6,
+            "reps": "6-9"
         }
       ]
     },
@@ -348,35 +366,40 @@
               "description": "The barbell bicep curl is a compound exercise that targets the biceps.",
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/barbellcurl.jpg",
-              "difficulty": 5
+              "difficulty": 5,
+              "reps": "8-12"
           },
           {
               "name": "Chin-Up",
               "description": "Chin-ups are a compound exercise that target the biceps and back muscles.",
               "muscles_targeted": ["Biceps", "Latissimus dorsi"],
               "img": "img/workoutImages/chinup.jpg",
-              "difficulty": 6
+              "difficulty": 6,
+              "reps": "8-12"
           },
           {
               "name": "Hammer Curl",
               "description": "Hammer curls are a compound exercise that target the biceps and brachialis.",
               "muscles_targeted": ["Biceps", "Brachialis"],
               "img": "img/workoutImages/hammercurl.jpg",
-              "difficulty": 4
+              "difficulty": 4,
+              "reps": "8-10"
           },
           {
               "name": "Preacher Curl",
               "description": "The preacher curl is a compound exercise that isolates the biceps.",
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/preachercurl.jpg",
-              "difficulty": 5
+              "difficulty": 5,
+              "reps": "8-12"
           },
           {
               "name": "Incline Dumbbell Curl",
               "description": "The incline dumbbell curl is a compound exercise that targets the biceps and brachialis.",
               "muscles_targeted": ["Biceps", "Brachialis"],
               "img": "img/workoutImages/inclinedumbbellcurl.jpg",
-              "difficulty": 4
+              "difficulty": 4,
+              "reps": "8-12"
           }
       ],
       "isolation": [
@@ -385,35 +408,40 @@
               "description": "The dumbbell bicep curl is an isolation exercise that targets the biceps.",
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/dumbbellbicepcurl.jpg",
-              "difficulty": 2
+              "difficulty": 2,
+              "reps": "10-12"
           },
           {
               "name": "Concentration Curl",
               "description": "The concentration curl is an isolation exercise that targets the biceps.",
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/concentratecurl.jpg",
-              "difficulty": 3
+              "difficulty": 3,
+              "reps": "10-12"
           },
           {
               "name": "Cable Bicep Curl",
               "description": "The cable bicep curl is an isolation exercise that targets the biceps.",
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/cablebicepcurl.jpg",
-              "difficulty": 3
+              "difficulty": 3,
+              "reps": "10-12"
           },
           {
               "name": "Spider Curl",
               "description": "The spider curl is an isolation exercise that targets the biceps.",
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/spidercurl.jpg",
-              "difficulty": 3
+              "difficulty": 3,
+              "reps": "8-12"
           },
           {
               "name": "Machine Bicep Curl",
               "description": "The machine bicep curl is an isolation exercise that targets the biceps.",
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/machinebicepcurl.jpg",
-              "difficulty": 2
+              "difficulty": 2,
+              "reps": "8-10"
           }
       ]
     },
@@ -432,35 +460,40 @@
               "description": "The hanging leg raise is a compound exercise that targets the rectus abdominis and hip flexors.",
               "muscles_targeted": ["Rectus abdominis", "Hip flexors"],
               "img": "img/workoutImages/hanginglegraise.jpg",
-              "difficulty": 5
+              "difficulty": 5,
+              "reps": "6-10"
           },
           {
               "name": "Ab Wheel Rollout",
               "description": "The ab wheel rollout is a compound exercise that targets the rectus abdominis and obliques.",
               "muscles_targeted": ["Rectus abdominis", "Obliques"],
               "img": "img/workoutImages/abwheelrollout.jpg",
-              "difficulty": 6
+              "difficulty": 6,
+              "reps": "8-12"
           },
           {
               "name": "Mountain Climbers",
               "description": "Mountain climbers are a compound exercise that target the rectus abdominis, obliques, and hip flexors.",
               "muscles_targeted": ["Rectus abdominis", "Obliques", "Hip flexors"],
               "img": "img/workoutImages/mountainclimbers.jpg",
-              "difficulty": 4
+              "difficulty": 4,
+              "reps": "10-12"
           },
           {
               "name": "Russian Twists",
               "description": "Russian twists are a compound exercise that target the obliques and transversus abdominis.",
               "muscles_targeted": ["Obliques", "Transversus abdominis"],
               "img": "img/workoutImages/russiantwists.jpg",
-              "difficulty": 3
+              "difficulty": 3,
+              "reps": "8-15"
           },
           {
               "name": "Burpees",
               "description": "Burpees are a compound exercise that target the rectus abdominis, obliques, and hip flexors.",
               "muscles_targeted": ["Rectus abdominis", "Obliques", "Hip flexors"],
               "img": "img/workoutImages/burpees.jpg",
-              "difficulty": 7
+              "difficulty": 7,
+              "reps": "10-15"
           }
       ],
       "isolation": [
@@ -469,35 +502,40 @@
               "description": "Crunches are an isolation exercise that primarily target the rectus abdominis.",
               "muscles_targeted": ["Rectus abdominis"],
               "img": "img/workoutImages/crunches.jpg",
-              "difficulty": 2
+              "difficulty": 2,
+              "reps": "15-20"
           },
           {
               "name": "Leg Raises",
               "description": "Leg raises are an isolation exercise that primarily target the lower rectus abdominis and hip flexors.",
               "muscles_targeted": ["Rectus abdominis", "Hip flexors"],
               "img": "img/workoutImages/legraise",
-              "difficulty": 3
+              "difficulty": 3,
+              "reps": "10-15"
           },
           {
               "name": "Bicycle Crunches",
               "description": "Bicycle crunches are an isolation exercise that target the obliques and rectus abdominis.",
               "muscles_targeted": ["Obliques", "Rectus abdominis"],
               "img": "img/workoutImages/bicyclecrunch.jpg",
-              "difficulty": 3
+              "difficulty": 3,
+              "reps": "12-15"
           },
           {
               "name": "Plank",
               "description": "The plank is an isolation exercise that targets the rectus abdominis, obliques, and transversus abdominis.",
               "muscles_targeted": ["Rectus abdominis", "Obliques", "Transversus abdominis"],
               "img": "img/workoutImages/plank.jpg",
-              "difficulty": 3
+              "difficulty": 3,
+              "reps": "1-2 min"
           },
           {
               "name": "Flutter Kicks",
               "description": "Flutter kicks are an isolation exercise that primarily target the lower rectus abdominis and hip flexors.",
               "muscles_targeted": ["Rectus abdominis", "Hip flexors"],
               "img": "img/workoutImages/flutterkick.jpg",
-              "difficulty": 2
+              "difficulty": 2,
+              "reps": "20-40"
           }
       ]
     },
@@ -517,35 +555,40 @@
               "description": "The military press is a compound exercise that primarily targets the deltoid muscles.",
               "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral"],
               "img": "img/workoutImages/military press.jpg",
-              "difficulty": 6
+              "difficulty": 6,
+              "reps": "5-10"
           },
           {
               "name": "Push Press",
               "description": "The push press is a compound exercise that targets the deltoid muscles and triceps.",
               "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral", "Triceps"],
               "img": "img/workoutImages/push press.jpg",
-              "difficulty": 7
+              "difficulty": 7,
+              "reps": "4-6"
           },
           {
               "name": "Arnold Press",
               "description": "The Arnold press is a compound exercise that targets all three heads of the deltoids.",
               "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral", "Deltoid Posterior"],
               "img": "img/workoutImages/arnoldpress.jpg",
-              "difficulty": 6
+              "difficulty": 6,
+              "reps": "8-12"
           },
           {
               "name": "Clean and Press",
               "description": "The clean and press is a compound exercise that targets the deltoid muscles, trapezius, and upper back.",
               "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral", "Trapezius", "Upper back"],
               "img": "img/workoutImages/cleanandpress.jpg",
-              "difficulty": 8
+              "difficulty": 8,
+              "reps": "3-8"
           },
           {
               "name": "Handstand Push-Up",
               "description": "The handstand push-up is a compound exercise that primarily targets the deltoid muscles and triceps.",
               "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral", "Triceps"],
               "img": "img/wrokoutImages/handstand.jpg",
-              "difficulty": 8
+              "difficulty": 8,
+              "reps": "15-60 sec"
           }
       ],
       "isolation": [
@@ -554,35 +597,40 @@
               "description": "Lateral raises are an isolation exercise that target the deltoid muscles.",
               "muscles_targeted": ["Deltoid Lateral"],
               "img": "img/workoutimages/lateralraise.jpg",
-              "difficulty": 3
+              "difficulty": 3,
+              "reps": "8-12"
           },
           {
               "name": "Front Raises",
               "description": "Front raises are an isolation exercise that target the anterior deltoid.",
               "muscles_targeted": ["Deltoid Anterior"],
               "img": "img/workoutImages/frontraise.jpg",
-              "difficulty": 3
+              "difficulty": 3,
+              "reps": "10-15"
           },
           {
               "name": "Rear Delt Flyes",
               "description": "Rear delt flyes are an isolation exercise that target the posterior deltoid.",
               "muscles_targeted": ["Deltoid Posterior"],
               "img": "img/workoutImages/rear_delt_flyes.jpg",
-              "difficulty": 4
+              "difficulty": 4,
+              "reps": "8-12"
           },
           {
               "name": "Reverse Pec Deck Flyes",
               "description": "Reverse pec deck flyes are an isolation exercise that target the posterior deltoid.",
               "muscles_targeted": ["Deltoid Posterior"],
               "img": "img/workoutImages/reversepecdeckfly.jpg",
-              "difficulty": 4
+              "difficulty": 4,
+              "reps": "8-12"
           },
           {
               "name": "External Rotation",
               "description": "External rotation is an isolation exercise that targets the rotator cuff muscles, specifically the infraspinatus and teres minor.",
               "muscles_targeted": ["Rotator cuff infraspinatus", "Rotator cuff teres minor"],
               "img": "img/workoutImages/externalrotation.jpg",
-              "difficulty": 3
+              "difficulty": 3,
+              "reps": "10-15"
           }
       ]
     },
@@ -595,19 +643,21 @@
     "legs": {
       "compound": [
           {
-              "name": "Squats",
+              "name": "Weighted Squats",
               "description": "Squats are a compound exercise that primarily targets the quadriceps, hamstrings, and glutes.",
               "muscles_targeted": ["Quadriceps", "Hamstrings", "Glutes"],
               "img": "img/workoutImages/weightedsquat.jpg",
-              "difficulty": 7
+              "difficulty": 7,
+              "reps": "6-8"
           },
 
           {
-              "name": "Lunges",
+              "name": "Weighted Lunges",
               "description": "Lunges are a compound exercise that target the quadriceps, hamstrings, and glutes.",
               "muscles_targeted": ["Quadriceps", "Hamstrings", "Glutes"],
               "img": "img/workoutImages/lunge.jpg",
-              "difficulty": 5
+              "difficulty": 5,
+              "reps": "10-12"
           },
           {
               "name": "Leg Press",
@@ -621,7 +671,8 @@
               "description": "Step-ups are a compound exercise that target the quadriceps, hamstrings, and glutes.",
               "muscles_targeted": ["Quadriceps", "Hamstrings", "Glutes"],
               "img": "https://www.youtube.com/watch?v=ikGl7hnRJJM",
-              "difficulty": 5
+              "difficulty": 5,
+              "reps": "16-20"
           }
       ],
       "isolation": [
@@ -630,35 +681,41 @@
               "description": "The leg curl is an isolation exercise that targets the hamstrings.",
               "muscles_targeted": ["Hamstrings"],
               "img": "img/workoutImages/legcurl.jpg",
-              "difficulty": 4
+              "difficulty": 4,
+              "reps": "12-15"
           },
           {
               "name": "Leg Extension",
               "description": "The leg extension is an isolation exercise that primarily targets the quadriceps.",
               "muscles_targeted": ["Quadriceps"],
               "img": "img/workoutIMages/legextension.jpg",
-              "difficulty": 4
+              "difficulty": 4,
+              "reps": "12-15"
           },
           {
               "name": "Calf Raises",
               "description": "Calf raises are an isolation exercise that primarily target the calves.",
               "muscles_targeted": ["Calves"],
               "img": "img/workoutImages/calfraise.jpg",
-              "difficulty": 3
+              "difficulty": 3,
+              "reps": "15-20"
           },
           {
               "name": "Hamstring Curl Machine",
               "description": "The hamstring curl machine is an isolation exercise that targets the hamstrings.",
               "muscles_targeted": ["Hamstrings"],
               "img": "img/workoutImages/hamstringcurlmachine.jpg",
-              "difficulty": 4
+              "difficulty": 4,
+              "reps": "8-12"
           },
           {
               "name": "Seated Calf Raises",
               "description": "Seated calf raises are an isolation exercise that primarily target the calves.",
               "muscles_targeted": ["Calves"],
               "img": "img/workoutImages/seatedcalfraise.jpg",
-              "difficulty": 3
+              "difficulty": 3,
+              "reps": "",
+              "link": "https://www.youtube.com/watch?v=JbyjNymZOt0"
           }
       ]
     },

@@ -17,7 +17,7 @@ app.post('/generate-workout', (req, res) => {
     const difficulty = req.body.difficulty;
     const muscle_groups = req.body.muscle || [];
     const jsonFilePath = getJsonFilePath(workoutType); // Get JSON file path based on muscle group
-    
+
     // Check for valid values
     if (givenTime === undefined || isNaN(givenTime) || givenTime <= 0 || muscle_groups.length == 0) {
         // Redirect to error page
@@ -56,6 +56,10 @@ app.post('/generate-workout', (req, res) => {
 app.get('/error', (req, res) => {
     res.render('testing/error');
 });
+
+app.get('/information', (req, res) =>{
+    res.render('landing/information')
+})
 
 // Function to get JSON file path based on muscle group
 function getJsonFilePath(workoutType) {
