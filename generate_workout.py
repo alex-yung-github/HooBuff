@@ -3,8 +3,8 @@ import random
 import sys
 
 muscle_groups = {
-    "triceps": ["long head", "lateral head", "medial head"],
-    "biceps": ["long head", "short head"],
+    "triceps": ["long head", "lateral head", "medial head", "triceps"],
+    "biceps": ["long head", "short head", "biceps"],
     "back": ["latissimus dorsi", "trapezius", "rhomboids", "erector spinae", "teres major", "teres minor"],
     "chest": ["pectoralis major upper", "pectoralis major middle", "pectoralis major lower", "serratus anterior"],
     "shoulders": ["deltoid anterior", "deltoid lateral", "deltoid posterior", "rotator cuff supraspinatus", "rotator cuff infraspinatus", "rotator cuff teres minor", "rotator cuff subscapularis"],
@@ -41,7 +41,9 @@ def select_exercises(exercises, num_exercises, target_difficulty, expanded_muscl
     
     toReturn = []
     maxScore = -1
-    while(maxScore < (min(len(exercises), num_exercises)-1) * 4):
+    count = 0
+    while(maxScore < (min(len(exercises), num_exercises)-1) * 4 and count < 5):
+        count+=1
         selected_exercises = random.sample(exercises, min(num_exercises, len(exercises)))
         avg_difficulty = 0
         for ex in selected_exercises:
