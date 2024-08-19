@@ -7,7 +7,8 @@
               "muscles_targeted": ["Triceps", "Pectoralis major", "Deltoid Anterior"],
               "img": "img/workoutImages/closegrip.jpg",
               "difficulty": 5,
-              "reps": "6-8"
+              "reps": "6-8",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Dips",
@@ -15,7 +16,8 @@
               "muscles_targeted": ["Triceps", "Pectoralis major", "Deltoid Anterior"],
               "img": "img/workoutImages/dip.jpg",
               "difficulty": 6,
-              "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Overhead Triceps Extension",
@@ -23,7 +25,8 @@
               "muscles_targeted": ["Triceps"],
               "img": "img/workoutImages/overheadtricepextension.jpg",
               "difficulty": 5,
-              "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Skull Crushers",
@@ -31,7 +34,8 @@
               "muscles_targeted": ["Long head", "Lateral head"],
               "img": "img/workoutImages/skull_crushers.jpg",
               "difficulty": 5,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Diamond Push-Ups",
@@ -39,7 +43,8 @@
               "muscles_targeted": ["Triceps"],
               "img": "img/workoutImages/diamondpushup.jpg",
               "difficulty": 3,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Triceps Dips",
@@ -47,7 +52,8 @@
               "muscles_targeted": ["Triceps", "Pectoralis major", "Deltoid Anterior"],
               "img": "img/workoutImages/tricepdips.jpg",
               "difficulty": 5,
-              "reps": "5-10"
+              "reps": "5-10",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           }
       ],
       "isolation": [
@@ -57,7 +63,8 @@
               "muscles_targeted": ["Triceps"],
               "img": "img/workoutImages/tricep_kickback.jpg",
               "difficulty": 4,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Cable Triceps Pushdown",
@@ -65,7 +72,8 @@
               "muscles_targeted": ["Triceps"],
               "img": "img/workoutIMages/singlearmdumbellrow.jpg",
               "difficulty": 4,
-              "reps": "12-15"
+              "reps": "12-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Triceps Rope Pushdown",
@@ -73,7 +81,8 @@
               "muscles_targeted": ["Triceps"],
               "img": "img/workoutImages/tricepropepush.jpg",
               "difficulty": 4,
-              "reps": "12-15"
+              "reps": "12-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Single-Arm Cable Triceps Extension",
@@ -81,7 +90,8 @@
               "muscles_targeted": ["Triceps"],
               "img": "img/workoutImages/singlearmtricepextension.jpg",
               "difficulty": 4,
-              "reps": "12-15"
+              "reps": "12-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Dumbbell Triceps Extension",
@@ -89,7 +99,8 @@
               "muscles_targeted": ["Triceps"],
               "img": "img/workoutImages/dumbelltricepextension.jpg",
               "difficulty": 4,
-              "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Machine Triceps Extension",
@@ -97,7 +108,8 @@
               "muscles_targeted": ["Triceps"],
               "img": "img/workoutImages/machinetricepext.jpg",
               "difficulty": 3,
-              "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Triceps Overhead Extension with Rope",
@@ -105,7 +117,8 @@
               "muscles_targeted": ["Triceps"],
               "img": "img/workoutImages/singlearmtricepextension.jpg",
               "difficulty": 4,
-              "reps":"10-12"
+              "reps":"10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           }
       ]
     },
@@ -124,7 +137,8 @@
               "muscles_targeted": ["Erector spinae", "Glutes", "Hamstrings", "Quadriceps"],
               "img": "img/workoutImages/deadlift.jpg",
               "difficulty": 8,
-              "reps": "1-3"
+              "reps": "1-3",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Pull-up",
@@ -132,7 +146,8 @@
               "muscles_targeted": ["Latissimus dorsi", "Long head Biceps", "Trapezius"],
               "img": "img/workoutImages/pullup.jpg",
               "difficulty": 6,
-              "reps": "5-8"
+              "reps": "5-8",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Barbell Row",
@@ -140,7 +155,8 @@
               "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius", "Forearms"],
               "img": "img/workoutImages/barbellR.jpg",
               "difficulty": 7,
-              "reps": "6-8"
+              "reps": "6-8",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Lat Pulldown",
@@ -148,7 +164,8 @@
               "muscles_targeted": ["Latissimus dorsi", "Trapezius", "Rhomboids", "Long head Biceps"],
               "img": "img/workoutImages/latpulldown.jpg",
               "difficulty": 5,
-              "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "T-Bar Row",
@@ -156,7 +173,8 @@
               "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius", "Long head Biceps"],
               "img": "img/workoutImages/t-bar.jpg",
               "difficulty": 6,
-              "reps": "8-10"
+              "reps": "8-10",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Pendlay Row",
@@ -164,7 +182,8 @@
               "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius", "Forearms"],
               "img": "img/workoutImages/pendlay.jpg",
               "difficulty": 7,
-              "reps": "5-7"
+              "reps": "5-7",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Rack Pull",
@@ -172,7 +191,8 @@
               "muscles_targeted": ["Upper back", "Trapezius", "Forearms", "Glutes", "Hamstrings"],
               "img": "img/workoutImages/rackpull.jpg",
               "difficulty": 8,
-                "reps": "6-8"
+                "reps": "6-8",
+                "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Seated Cable Row",
@@ -180,7 +200,8 @@
               "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius", "Long head Biceps"],
               "img": "img/workoutImages/seatedcablerow.jpg",
               "difficulty": 5,
-              "reps": "10-15"
+              "reps": "10-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Dumbbell Pullover",
@@ -188,7 +209,8 @@
               "muscles_targeted": ["Latissimus dorsi", "Pectoralis major upper", "Long head Triceps"],
               "img": "img/workoutImages/dumbellpullover.jpg",
               "difficulty": 4,
-              "reps": "10-15"
+              "reps": "10-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Bent-Over Row",
@@ -196,7 +218,8 @@
               "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius", "Long head Biceps"],
               "img": "img/workoutImages/bentrow.jpg",
               "difficulty": 6,
-              "reps": "6-9"
+              "reps": "6-9",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           }
       ],
       "isolation": [
@@ -206,7 +229,8 @@
             "muscles_targeted": ["Latissimus dorsi", "Rhomboids"],
             "img": "img/workoutIMages/dumbellrow.jpg",
             "difficulty": 4,
-            "reps": "8-10"
+            "reps": "8-10",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Reverse Flyes",
@@ -214,7 +238,8 @@
             "muscles_targeted": ["Rotator cuff posterior deltoid", "Upper back"],
             "img": "img/workoutImages/reverseflyes.jpg",
             "difficulty": 3,
-            "reps": "12-15"
+            "reps": "12-15",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Hyperextensions",
@@ -222,7 +247,8 @@
             "muscles_targeted": ["Lower back", "Glutes", "Hamstrings"],
             "img": "img/workoutImages/hyperextend.jpg",
             "difficulty": 5,
-            "reps": "10-15"
+            "reps": "10-15",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Straight Arm Pulldown",
@@ -230,7 +256,8 @@
             "muscles_targeted": ["Latissimus dorsi", "Rotator cuff posterior deltoid"],
             "img": "img/workoutImages/tricepropepush.jpg",
             "difficulty": 4,
-            "reps": "10-15"
+            "reps": "10-15",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Single-Arm Dumbbell Row",
@@ -238,7 +265,8 @@
             "muscles_targeted": ["Latissimus dorsi", "Upper back"],
             "img": "img/workoutImages/dumbellrow.jpg",
             "difficulty": 5,
-            "reps": "10-15" 
+            "reps": "10-15",
+            "link": "https://www.youtube.com/watch?v=dummyLink" 
         },
         {
           "name": "Machine Row",
@@ -246,7 +274,8 @@
           "muscles_targeted": ["Latissimus dorsi", "Rhomboids"],
           "img": "img/workoutImages/machinerow.jpg",
           "difficulty": 3,
-          "reps": "12-15"
+          "reps": "12-15",
+          "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Pull-Over Machine",
@@ -254,7 +283,8 @@
             "muscles_targeted": ["Latissimus dorsi", "Pectoralis major"],
             "img": "img/workoutImages/dumbellpullover.jpg",
             "difficulty": 4,
-            "reps": "8-10"
+            "reps": "8-10",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Inverted Row",
@@ -262,7 +292,8 @@
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/invertedrow.jpg",
             "difficulty": 3,
-            "reps": "8-15"
+            "reps": "8-15",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Face Pull",
@@ -270,7 +301,8 @@
             "muscles_targeted": ["Rotator cuff posterior deltoid", "Trapezius", "Rotator cuff"],
             "img": "img/workoutImages/facepull.jpg",
             "difficulty": 4,
-            "reps": "10-12"
+            "reps": "10-12",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Chest Supported Row",
@@ -278,7 +310,8 @@
             "muscles_targeted": ["Upper back", "Rhomboids", "Rotator cuff posterior deltoid"],
             "img": "img/workoutImages/chestrow.jpg",
             "difficulty": 3,
-            "reps": "8-10"
+            "reps": "8-10",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Smith Machine Bent-Over Row",
@@ -286,7 +319,8 @@
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/smithbentrow.jpg",
             "difficulty": 5,
-            "reps": "8-12"
+            "reps": "8-12",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Cable Row",
@@ -294,7 +328,8 @@
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/seatedcablerow.jpg",
             "difficulty": 6,
-            "reps": "10-15"
+            "reps": "10-15",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "One-Arm Lat Pulldown",
@@ -302,7 +337,8 @@
             "muscles_targeted": ["Latissimus dorsi"],
             "img": "img/workoutImages/latpulldown.jpg",
             "difficulty": 4,
-            "reps": "8-12"
+            "reps": "8-12",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Close-Grip Pulldown",
@@ -310,7 +346,8 @@
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/closegrippull",
             "difficulty": 6,
-            "reps": "8-12"
+            "reps": "8-12",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Chest Supported T-Bar Row",
@@ -318,7 +355,8 @@
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/t-bar.jpg",
             "difficulty": 7,
-            "reps": "5-10"
+            "reps": "5-10",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Single-Arm Smith Machine Row",
@@ -326,7 +364,8 @@
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/smithbentrow.jpg",
             "difficulty": 6,
-            "reps": "10-12"
+            "reps": "10-12",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Cable Face Pull",
@@ -334,7 +373,8 @@
             "muscles_targeted": ["Rotator cuff posterior deltoid", "Trapezius", "Rotator cuff"],
             "img": "img/workoutImages/facepull.jpg",
             "difficulty": 4,
-            "reps": "10-12"
+            "reps": "10-12",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Machine Assisted Pull-Up",
@@ -342,7 +382,8 @@
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/machineassistedpullup.jpg",
             "difficulty": 5,
-            "reps": "6-8"
+            "reps": "6-8",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         },
         {
             "name": "Cable Bent-Over Row",
@@ -350,7 +391,8 @@
             "muscles_targeted": ["Upper back", "Latissimus dorsi", "Rhomboids", "Trapezius"],
             "img": "img/workoutImages/bentcablerow.jpg",
             "difficulty": 6,
-            "reps": "6-9"
+            "reps": "6-9",
+            "link": "https://www.youtube.com/watch?v=dummyLink"
         }
       ]
     },
@@ -367,7 +409,8 @@
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/barbellcurl.jpg",
               "difficulty": 5,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Chin-Up",
@@ -375,7 +418,8 @@
               "muscles_targeted": ["Biceps", "Latissimus dorsi"],
               "img": "img/workoutImages/chinup.jpg",
               "difficulty": 6,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Hammer Curl",
@@ -383,7 +427,8 @@
               "muscles_targeted": ["Biceps", "Brachialis"],
               "img": "img/workoutImages/hammercurl.jpg",
               "difficulty": 4,
-              "reps": "8-10"
+              "reps": "8-10",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Preacher Curl",
@@ -391,7 +436,8 @@
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/preachercurl.jpg",
               "difficulty": 5,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Incline Dumbbell Curl",
@@ -399,7 +445,8 @@
               "muscles_targeted": ["Biceps", "Brachialis"],
               "img": "img/workoutImages/inclinedumbbellcurl.jpg",
               "difficulty": 4,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           }
       ],
       "isolation": [
@@ -409,7 +456,8 @@
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/dumbbellbicepcurl.jpg",
               "difficulty": 2,
-              "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Concentration Curl",
@@ -417,7 +465,8 @@
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/concentratecurl.jpg",
               "difficulty": 3,
-              "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Cable Bicep Curl",
@@ -425,7 +474,8 @@
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/cablebicepcurl.jpg",
               "difficulty": 3,
-              "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Spider Curl",
@@ -433,7 +483,8 @@
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/spidercurl.jpg",
               "difficulty": 3,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Machine Bicep Curl",
@@ -441,7 +492,8 @@
               "muscles_targeted": ["Biceps"],
               "img": "img/workoutImages/machinebicepcurl.jpg",
               "difficulty": 2,
-              "reps": "8-10"
+              "reps": "8-10",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           }
       ]
     },
@@ -461,7 +513,8 @@
               "muscles_targeted": ["Rectus abdominis", "Hip flexors"],
               "img": "img/workoutImages/hanginglegraise.jpg",
               "difficulty": 5,
-              "reps": "6-10"
+              "reps": "6-10",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Ab Wheel Rollout",
@@ -477,7 +530,8 @@
               "muscles_targeted": ["Rectus abdominis", "Obliques", "Hip flexors"],
               "img": "img/workoutImages/mountainclimbers.jpg",
               "difficulty": 4,
-              "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Russian Twists",
@@ -485,7 +539,8 @@
               "muscles_targeted": ["Obliques", "Transversus abdominis"],
               "img": "img/workoutImages/russiantwists.jpg",
               "difficulty": 3,
-              "reps": "8-15"
+              "reps": "8-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Burpees",
@@ -493,7 +548,8 @@
               "muscles_targeted": ["Rectus abdominis", "Obliques", "Hip flexors"],
               "img": "img/workoutImages/burpees.jpg",
               "difficulty": 7,
-              "reps": "10-15"
+              "reps": "10-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           }
       ],
       "isolation": [
@@ -503,7 +559,8 @@
               "muscles_targeted": ["Rectus abdominis"],
               "img": "img/workoutImages/crunches.jpg",
               "difficulty": 2,
-              "reps": "15-20"
+              "reps": "15-20",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Leg Raises",
@@ -511,7 +568,8 @@
               "muscles_targeted": ["Rectus abdominis", "Hip flexors"],
               "img": "img/workoutImages/legraise",
               "difficulty": 3,
-              "reps": "10-15"
+              "reps": "10-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Bicycle Crunches",
@@ -519,7 +577,8 @@
               "muscles_targeted": ["Obliques", "Rectus abdominis"],
               "img": "img/workoutImages/bicyclecrunch.jpg",
               "difficulty": 3,
-              "reps": "12-15"
+              "reps": "12-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Plank",
@@ -527,7 +586,8 @@
               "muscles_targeted": ["Rectus abdominis", "Obliques", "Transversus abdominis"],
               "img": "img/workoutImages/plank.jpg",
               "difficulty": 3,
-              "reps": "1-2 min"
+              "reps": "1-2 min",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Flutter Kicks",
@@ -535,7 +595,8 @@
               "muscles_targeted": ["Rectus abdominis", "Hip flexors"],
               "img": "img/workoutImages/flutterkick.jpg",
               "difficulty": 2,
-              "reps": "20-40"
+              "reps": "20-40",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           }
       ]
     },
@@ -554,9 +615,10 @@
               "name": "Military Press",
               "description": "The military press is a compound exercise that primarily targets the deltoid muscles.",
               "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral"],
-              "img": "img/workoutImages/military press.jpg",
+              "img": "img/workoutImages/militarypress.jpg",
               "difficulty": 6,
-              "reps": "5-10"
+              "reps": "5-10",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Push Press",
@@ -564,7 +626,8 @@
               "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral", "Triceps"],
               "img": "img/workoutImages/push press.jpg",
               "difficulty": 7,
-              "reps": "4-6"
+              "reps": "4-6",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Arnold Press",
@@ -572,7 +635,8 @@
               "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral", "Deltoid Posterior"],
               "img": "img/workoutImages/arnoldpress.jpg",
               "difficulty": 6,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Clean and Press",
@@ -580,7 +644,8 @@
               "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral", "Trapezius", "Upper back"],
               "img": "img/workoutImages/cleanandpress.jpg",
               "difficulty": 8,
-              "reps": "3-8"
+              "reps": "3-8",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Handstand Push-Up",
@@ -588,7 +653,8 @@
               "muscles_targeted": ["Deltoid Anterior", "Deltoid Lateral", "Triceps"],
               "img": "img/workoutImages/handstand.jpg",
               "difficulty": 8,
-              "reps": "15-60 sec"
+              "reps": "15-60 sec",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           }
       ],
       "isolation": [
@@ -598,7 +664,8 @@
               "muscles_targeted": ["Deltoid Lateral"],
               "img": "img/workoutimages/lateralraise.jpg",
               "difficulty": 3,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Front Raises",
@@ -606,7 +673,8 @@
               "muscles_targeted": ["Deltoid Anterior"],
               "img": "img/workoutImages/frontraise.jpg",
               "difficulty": 3,
-              "reps": "10-15"
+              "reps": "10-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Rear Delt Flyes",
@@ -614,7 +682,8 @@
               "muscles_targeted": ["Deltoid Posterior"],
               "img": "img/workoutImages/rear_delt_flyes.jpg",
               "difficulty": 4,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Reverse Pec Deck Flyes",
@@ -622,7 +691,8 @@
               "muscles_targeted": ["Deltoid Posterior"],
               "img": "img/workoutImages/reversepecdeckfly.jpg",
               "difficulty": 4,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "External Rotation",
@@ -630,7 +700,8 @@
               "muscles_targeted": ["Rotator cuff infraspinatus", "Rotator cuff teres minor"],
               "img": "img/workoutImages/externalrotation.jpg",
               "difficulty": 3,
-              "reps": "10-15"
+              "reps": "10-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           }
       ]
     },
@@ -648,7 +719,8 @@
               "muscles_targeted": ["Quadriceps", "Hamstrings", "Glutes"],
               "img": "img/workoutImages/weightedsquat.jpg",
               "difficulty": 7,
-              "reps": "6-8"
+              "reps": "6-8",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
 
           {
@@ -664,7 +736,8 @@
               "description": "The leg press is a compound exercise that primarily targets the quadriceps, hamstrings, and glutes.",
               "muscles_targeted": ["Quadriceps", "Hamstrings", "Glutes"],
               "img": "img/workoutImages/legpress.jpg",
-              "difficulty": 6
+              "difficulty": 6,
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Step-Ups",
@@ -672,7 +745,8 @@
               "muscles_targeted": ["Quadriceps", "Hamstrings", "Glutes"],
               "img": "https://www.youtube.com/watch?v=ikGl7hnRJJM",
               "difficulty": 5,
-              "reps": "16-20"
+              "reps": "16-20",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           }
       ],
       "isolation": [
@@ -682,7 +756,8 @@
               "muscles_targeted": ["Hamstrings"],
               "img": "img/workoutImages/legcurl.jpg",
               "difficulty": 4,
-              "reps": "12-15"
+              "reps": "12-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Leg Extension",
@@ -690,7 +765,8 @@
               "muscles_targeted": ["Quadriceps"],
               "img": "img/workoutIMages/legextension.jpg",
               "difficulty": 4,
-              "reps": "12-15"
+              "reps": "12-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Calf Raises",
@@ -698,7 +774,8 @@
               "muscles_targeted": ["Calves"],
               "img": "img/workoutImages/calfraise.jpg",
               "difficulty": 3,
-              "reps": "15-20"
+              "reps": "15-20",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Hamstring Curl Machine",
@@ -706,7 +783,8 @@
               "muscles_targeted": ["Hamstrings"],
               "img": "img/workoutImages/hamstringcurlmachine.jpg",
               "difficulty": 4,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Seated Calf Raises",
@@ -732,7 +810,8 @@
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower", "Deltoids", "Triceps"],
               "img": "img/workoutImages/benchpress.png",
               "difficulty": 7,
-              "reps": "6-10"
+              "reps": "6-10",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Push-Ups",
@@ -740,7 +819,8 @@
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower", "Deltoids", "Triceps"],
               "img": "img/workoutImages/pushup.png",
               "difficulty": 5,
-              "reps": "12-15"
+              "reps": "12-15",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Incline Bench Press",
@@ -748,7 +828,8 @@
               "muscles_targeted": ["Pectoralis major upper", "Deltoids", "Triceps"],
               "img": "img/workoutImages/inclinebenchpress.jpg",
               "difficulty": 6,
-              "reps": "8-12"
+              "reps": "8-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Decline Bench Press",
@@ -756,7 +837,8 @@
               "muscles_targeted": ["Pectoralis major lower", "Deltoids", "Triceps"],
               "img": "img/workoutImages/declinebenchpress.jpg",
               "difficulty": 8,
-              "reps": "4-6"
+              "reps": "4-6",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           }
       ],
       "isolation": [
@@ -766,7 +848,8 @@
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
               "img": "img/workoutImages/chestflyes.jpg",
               "difficulty": 4,
-              "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Cable Crossover",
@@ -774,7 +857,8 @@
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
               "img": "img/workoutImages/cablecrossover.jpg",
               "difficulty": 5,
-              "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Dumbbell Flyes",
@@ -782,7 +866,8 @@
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
               "img": "img/workoutImages/chestflyes.jpg",
               "difficulty": 4,
-              "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Machine Chest Press",
@@ -790,7 +875,8 @@
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
               "img": "img/workoutImages/machinechestpress.jpg",
               "difficulty": 5,
-              "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           },
           {
               "name": "Pec Deck Machine",
@@ -798,7 +884,8 @@
               "muscles_targeted": ["Pectoralis major upper", "Pectoralis major middle", "Pectoralis major lower"],
               "img": "img/workoutImages/pecdeckmachine.jpg",
               "difficulty": 4,
-                "reps": "10-12"
+              "reps": "10-12",
+              "link": "https://www.youtube.com/watch?v=dummyLink"
           }
       ]
     }
